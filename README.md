@@ -22,3 +22,4 @@
   - UIKit, UIView, UIViewController, AutoLayout, IBOutlet, IBAction  
   - Content Hugging, Compression Resistance, UINavigationViewController  
   - 화면 전환, ViewController Lifecycle, 화면 간 데이터 전달, assets image(1x 2x 3x)  
+  - UIStackView, IBInspectable, IBDesignable  
