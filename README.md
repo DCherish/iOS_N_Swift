@@ -1,4 +1,22 @@
-# iOS_N_Swift
+---
 
-hello world
-for connecting test
+<div align="center">
+
+ 💜 *iOS & Swift Study*
+
+</div>
+
+---
+
+# 🧐 스터디 목표
+- **iOS** 모바일 플랫폼의 이해  
+- **Swift** 언어의 이해  
+- **Swift**을 이용한 **iOS** 개발 실력 향상  
+
+# 👨‍💻 사용 기술 Stack
+- [x] XCode  
+- [x] Swift  
+
+# ✍️ 실습 자료
+- [Day01](https://github.com/DCherish/iOS_N_Swift/tree/main/Day01) `File`  
+  - UIKit, UIView, UIViewController, AutoLayout, IBOutlet, IBAction, Content Hugging, Compression Resistance  
