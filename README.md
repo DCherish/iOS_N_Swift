@@ -25,3 +25,5 @@
   - UIStackView, IBInspectable, IBDesignable  
 - [Day02](https://github.com/DCherish/iOS_N_Swift/tree/main/Day02) `File`  
   - UITableView, UIAlertViewController, UserDefaults  
+  - UITabBarController, UICollectionView, NotificationCenter  
+  - DispatchSourceTimer, UIView Animation  
