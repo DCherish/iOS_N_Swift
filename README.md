@@ -30,3 +30,5 @@
 - [Day03](https://github.com/DCherish/iOS_N_Swift/tree/main/Day03) `File`  
   - HTTP, URLSession, Codable, OpenAPI  
   - Alamofire, Charts, CocoaPods  
+- [Day04](https://github.com/DCherish/iOS_N_Swift/tree/main/Day04) `File`  
+  - FirebaseAuth(email/password, OAuth(google, Apple(not yet)))  
