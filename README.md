@@ -27,3 +27,6 @@
   - UITableView, UIAlertViewController, UserDefaults  
   - UITabBarController, UICollectionView, NotificationCenter  
   - DispatchSourceTimer, UIView Animation  
+- [Day03](https://github.com/DCherish/iOS_N_Swift/tree/main/Day03) `File`  
+  - HTTP, URLSession, Codable, OpenAPI  
+  - Alamofire, Charts, CocoaPods  
