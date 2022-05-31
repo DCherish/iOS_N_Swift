@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         }
     }
     
-    let token: String = "Secret On Github :) Sorry"
+    let token: String = "Secret On Github :)"
     
     private func getCurrentWeather(cityName: String) {
         guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(cityName)&appid=\(token)") else { return }
