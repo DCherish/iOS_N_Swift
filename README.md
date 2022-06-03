@@ -32,3 +32,5 @@
   - Alamofire, Charts, CocoaPods  
 - [Day04](https://github.com/DCherish/iOS_N_Swift/tree/main/Day04) `File`  
   - FirebaseAuth(email/password, OAuth(google, Apple(not yet)))  
+- [Day05](https://github.com/DCherish/iOS_N_Swift/tree/main/Day05) `File`  
+  - FirebaseDatabase(Realtime, Firestore)  
