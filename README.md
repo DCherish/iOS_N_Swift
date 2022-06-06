@@ -37,3 +37,4 @@
   - FirebaseRemoteConfig, Firebase A/B Testing  
 - [Day06](https://github.com/DCherish/iOS_N_Swift/tree/main/Day06) `File`  
   - Local Notification(NotificationRequest, NotificationCenter)  
+  - Remote Notification(APNS(not yet), FirebaseCloudMessaging)  
