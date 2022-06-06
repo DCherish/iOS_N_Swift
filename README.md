@@ -38,3 +38,5 @@
 - [Day06](https://github.com/DCherish/iOS_N_Swift/tree/main/Day06) `File`  
   - Local Notification(NotificationRequest, NotificationCenter)  
   - Remote Notification(APNS(not yet), FirebaseCloudMessaging)  
+- [Day07](https://github.com/DCherish/iOS_N_Swift/tree/main/Day07) `File`  
+  - UICollectionView, SnapKit  
