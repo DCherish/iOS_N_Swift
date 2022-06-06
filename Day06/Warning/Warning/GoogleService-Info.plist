@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>219072860517-ueitntvqjsd1v10k7v08uthm1hdg05sa.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.219072860517-ueitntvqjsd1v10k7v08uthm1hdg05sa</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBAm1HshqAip3nLh6hciJeIyWN3Pdnid8w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>219072860517</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kr.co.dcherish.Warning</string>
+	<key>PROJECT_ID</key>
+	<string>warning-236f9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>warning-236f9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:219072860517:ios:833371ef2350b1fdcd918c</string>
+</dict>
+</plist>
