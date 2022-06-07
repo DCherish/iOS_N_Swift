@@ -26,17 +26,18 @@
 - [Day02](https://github.com/DCherish/iOS_N_Swift/tree/main/Day02) `File`  
   - UITableView, UIAlertViewController, UserDefaults  
   - UITabBarController, UICollectionView, NotificationCenter  
-  - DispatchSourceTimer, UIView Animation  
+  - DispatchSourceTimer, UIView Animation, AudioToolbox  
 - [Day03](https://github.com/DCherish/iOS_N_Swift/tree/main/Day03) `File`  
-  - HTTP, URLSession, Codable, OpenAPI  
-  - Alamofire, Charts, CocoaPods  
+  - HTTP, URLSession, Codable, OpenAPI(OpenWeatherAPI, Corona19API)  
+  - Alamofire(lib), Charts, CocoaPods  
 - [Day04](https://github.com/DCherish/iOS_N_Swift/tree/main/Day04) `File`  
   - FirebaseAuth(email/password, OAuth(google, Apple(not yet)))  
 - [Day05](https://github.com/DCherish/iOS_N_Swift/tree/main/Day05) `File`  
-  - FirebaseDatabase(Realtime, Firestore)  
+  - FirebaseDatabase(Realtime, Firestore), Kingfisher(lib)  
   - FirebaseRemoteConfig, Firebase A/B Testing  
 - [Day06](https://github.com/DCherish/iOS_N_Swift/tree/main/Day06) `File`  
   - Local Notification(NotificationRequest, NotificationCenter)  
   - Remote Notification(APNS(not yet), FirebaseCloudMessaging)  
 - [Day07](https://github.com/DCherish/iOS_N_Swift/tree/main/Day07) `File`  
   - UICollectionView, SnapKit, SwiftUI(PreviewProvider)  
+  - URLSession, OpenAPI(PunkAPI), KingFisher(lib), SnapKit(lib), GCD  
