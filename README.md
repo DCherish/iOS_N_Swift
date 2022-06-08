@@ -39,5 +39,11 @@
   - Local Notification(NotificationRequest, NotificationCenter)  
   - Remote Notification(APNS(not yet), FirebaseCloudMessaging)  
 - [Day07](https://github.com/DCherish/iOS_N_Swift/tree/main/Day07) `File`  
-  - UICollectionView, SnapKit, SwiftUI(PreviewProvider)  
+  - UICollectionView, PreviewProvider(SwiftUI)  
   - URLSession, OpenAPI(PunkAPI), KingFisher(lib), SnapKit(lib), GCD  
+- [Day08](https://github.com/DCherish/iOS_N_Swift/tree/main/Day08) `File`  
+  - SwiftUI  
+    - with UIKit, Modifier, Representable  
+    - Property Wrapper  
+      - @State, @Observable/-vedObject, @EnvironmentObject, @Binding, @Published  
+  - Keyword(Identifiable, CodingKeys/CodingKey, TabView, .constant)  
