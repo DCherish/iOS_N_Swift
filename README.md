@@ -43,7 +43,7 @@
   - URLSession, OpenAPI(PunkAPI), KingFisher(lib), SnapKit(lib), GCD  
 - [Day08](https://github.com/DCherish/iOS_N_Swift/tree/main/Day08) `File`  
   - SwiftUI  
-    - with UIKit, Modifier, Representable  
+    - with UIKit, TabView, Modifier, Representable  
     - Property Wrapper  
       - @State, @Observable/-vedObject, @EnvironmentObject, @Binding, @Published  
-  - Keyword(Identifiable, CodingKeys/CodingKey, TabView, .constant)  
+  - Keyword(Identifiable, CodingKeys/CodingKey, .constant)  
