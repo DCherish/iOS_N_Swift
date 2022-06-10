@@ -40,10 +40,13 @@
   - Remote Notification(APNS(not yet), FirebaseCloudMessaging)  
 - [Day07](https://github.com/DCherish/iOS_N_Swift/tree/main/Day07) `File`  
   - UICollectionView, PreviewProvider(SwiftUI)  
-  - URLSession, OpenAPI(PunkAPI), KingFisher(lib), SnapKit(lib), GCD  
+  - URLSession, OpenAPI(PunkAPI), Kingfisher(lib), SnapKit(lib), GCD  
 - [Day08](https://github.com/DCherish/iOS_N_Swift/tree/main/Day08) `File`  
   - SwiftUI  
     - with UIKit, TabView, Modifier, Representable  
     - Property Wrapper  
       - @State, @Observable/-vedObject, @EnvironmentObject, @Binding, @Published  
   - Keyword(Identifiable, CodingKeys/CodingKey, .constant)  
+- [Day09](https://github.com/DCherish/iOS_N_Swift/tree/main/Day09) `File`  
+  - SnapKit(lib), Kingfisher(lib), UICollectionView, UIStackView, UIScrollView  
+  - UITabBarController, Share Sheet(UIActivityViewController)  
