@@ -50,3 +50,6 @@
 - [Day09](https://github.com/DCherish/iOS_N_Swift/tree/main/Day09) `File`  
   - SnapKit(lib), Kingfisher(lib), UICollectionView, UIStackView, UIScrollView  
   - UITabBarController, Share Sheet(UIActivityViewController)  
+- [Day10](https://github.com/DCherish/iOS_N_Swift/tree/main/Day10) `File`  
+  - appTintColor, UIImagePickerController, TextView(placeholder tech(TextField))   
+  - 
