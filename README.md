@@ -52,4 +52,5 @@
   - UITabBarController, Share Sheet(UIActivityViewController)  
 - [Day10](https://github.com/DCherish/iOS_N_Swift/tree/main/Day10) `File`  
   - appTintColor, UIImagePickerController, TextView(placeholder tech(TextField))   
-  - 
+  - CodingKey(Adv.), UISearchBar, UITableView, UIRefreshControl  
+  - Alamofire(lib), SnapKit(lib), OpenAPI(SeoulOpenAPI)    
