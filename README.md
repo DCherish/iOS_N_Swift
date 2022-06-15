@@ -57,3 +57,5 @@
 - [Day11](https://github.com/DCherish/iOS_N_Swift/tree/main/Day11) `File`  
   - RxSwift(Observable, Traits, Subjects, Filtering/Transforming Operators)  
   - UIRefreshControl, SnapKit(lib), OpenAPI(GitHubRestAPI)  
+  - RxSwift(Combining/Time-Based Operators), RxCocoa, RxExtension  
+  - SnapKit(lib), Kingfisher(lib), OpenAPI(KakaoBlogSearch(byRESTAPI))  
