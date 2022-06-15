@@ -1,4 +1,7 @@
 import RxSwift
+import RxCocoa
+import UIKit
+import PlaygroundSupport
 
 let disposeBag = DisposeBag()
 
@@ -57,35 +60,54 @@ timeStone
 //    })
 //    .disposed(by: disposeBag)
 
-print("-----Window-----")
-let observableCount = 5
-let makeTime = RxTimeInterval.seconds(2)
+//print("-----Window-----")
+////let observableMaxCount = 1
+//let observableMaxCount = 5
+//let spanTime = RxTimeInterval.seconds(2)
+//
+//let window = PublishSubject<String>()
+//
+//var windowCount = 0
+//let windowTimerSource = DispatchSource.makeTimerSource()
+//windowTimerSource.schedule(deadline: .now() + 2, repeating: .seconds(1))
+//windowTimerSource.setEventHandler {
+//    windowCount += 1
+//    window.onNext("\(windowCount)")
+//}
+//windowTimerSource.resume()
+//
+//window
+//    .window(
+//        timeSpan: spanTime,
+//        count: observableMaxCount,
+//        scheduler: MainScheduler.instance
+//    )
+//    .flatMap { windowObservable -> Observable<(index: Int, element: String)> in
+//        return windowObservable.enumerated()
+//    }
+//    .subscribe(onNext: {
+//        print("\($0.index)번째 Observable의 요소: \($0.element)")
+//    })
+//    .disposed(by: disposeBag)
 
-let window = PublishSubject<String>()
-
-var windowCount = 0
-let windowTimerSource = DispatchSource.makeTimerSource()
-windowTimerSource.schedule(deadline: .now() + 2, repeating: .seconds(1))
-windowTimerSource.setEventHandler {
-    windowCount += 1
-    window.onNext("\(windowCount)")
-}
-windowTimerSource.resume()
-
-window
-    .window(
-        timeSpan: makeTime,
-        count: observableCount,
-        scheduler: MainScheduler.instance
-    )
-    .flatMap { windowObservable -> Observable<(index: Int, element: String)> in
-        return windowObservable.enumerated()
-    }
-    .subscribe(onNext: {
-        print("\($0.index)번째 Observable의 요소: \($0.element)")
-    })
-    .disposed(by: disposeBag)
-
+//print("-----DelaySubscription-----")
+//let delaySource = PublishSubject<String>()
+//
+//var delayCount = 0
+//let delayTimeSource = DispatchSource.makeTimerSource()
+//delayTimeSource.schedule(deadline: .now() + 2, repeating: .seconds(1))
+//delayTimeSource.setEventHandler {
+//    delayCount += 1
+//    delaySource.onNext("\(delayCount)")
+//}
+//delayTimeSource.resume()
+//
+//delaySource
+//    .delaySubscription(.seconds(5), scheduler: MainScheduler.instance)
+//    .subscribe(onNext: {
+//        print($0)
+//    })
+//    .disposed(by: disposeBag)
 
 //print("-----Delay-----")
 //let delaySubject = PublishSubject<Int>()
@@ -105,3 +127,40 @@ window
 //        print($0)
 //    })
 //    .disposed(by: disposeBag)
+//
+//print("-----Interval-----")
+//Observable<Int>
+//    .interval(.seconds(3), scheduler: MainScheduler.instance)
+//    .subscribe(onNext: {
+//        print($0)
+//    })
+//    .disposed(by: disposeBag)
+
+//print("-----Timer-----")
+//Observable<Int>
+//    .timer(
+//        .seconds(1),
+//        period: .seconds(2),
+//        scheduler:  MainScheduler.instance
+//    ).subscribe(onNext: {
+//        print($0)
+//    })
+//    .disposed(by: disposeBag)
+                
+print("-----TimeOut-----")
+let doNotTappedError = UIButton(type: .system)
+doNotTappedError.setTitle("눌러주세요!", for: .normal)
+doNotTappedError.sizeToFit()
+
+PlaygroundPage.current.liveView = doNotTappedError
+
+doNotTappedError.rx.tap
+    .do(onNext: {
+        print("tap")
+    })
+    .timeout(.seconds(5), scheduler: MainScheduler.instance)
+    .subscribe(onNext: {
+        print($0)
+    })
+    .disposed(by: disposeBag)
+    

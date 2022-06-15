@@ -46,6 +46,13 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>FilteringOperators (Playground).xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>Observable (Playground) 1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -86,7 +93,7 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>4</integer>
 		</dict>
 		<key>TimeBasedOperators (Playground) 1.xcscheme</key>
 		<dict>
