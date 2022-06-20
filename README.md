@@ -59,3 +59,5 @@
   - UIRefreshControl, SnapKit(lib), OpenAPI(GitHubRestAPI)  
   - RxSwift(Combining/Time-Based Operators), RxCocoa, RxExtension  
   - SnapKit(lib), Kingfisher(lib), OpenAPI(KakaoBlogSearch(byRESTAPI))  
+- [Day12](https://github.com/DCherish/iOS_N_Swift/tree/main/Day12) `File`  
+  - MVC, MVVM  
