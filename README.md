@@ -61,3 +61,6 @@
   - SnapKit(lib), Kingfisher(lib), OpenAPI(KakaoBlogSearch(byRESTAPI))  
 - [Day12](https://github.com/DCherish/iOS_N_Swift/tree/main/Day12) `File`  
   - Design Pattern(MVC, MVVM)  
+- [Day13](https://github.com/DCherish/iOS_N_Swift/tree/main/Day13) `File`  
+  - Design Pattern(MVVM), CLLocationManager, OpenAPI(KakaoMapAPI)  
+  - UnitTest, XCTest, RxTest, RxBlocking, Nimble, @testable  
