@@ -64,3 +64,6 @@
 - [Day13](https://github.com/DCherish/iOS_N_Swift/tree/main/Day13) `File`  
   - Design Pattern(MVVM), CLLocationManager, OpenAPI(KakaoMapAPI)  
   - UnitTest, XCTest, RxTest, RxBlocking, Nimble, @testable  
+- [Day14](https://github.com/DCherish/iOS_N_Swift/tree/main/Day14) `File`  
+  - SwiftUI, Combine, CLLocation, MapKit, OpenAPI(CoronaAPI)  
+  - CaseIterable, Identifiable, @State, @Observable/-vedObject, @Binding, @Published  
