@@ -67,3 +67,7 @@
 - [Day14](https://github.com/DCherish/iOS_N_Swift/tree/main/Day14) `File`  
   - SwiftUI, Combine, CLLocation, MapKit, OpenAPI(CoronaAPI)  
   - CaseIterable, Identifiable, @State, @Observable/-vedObject, @Binding, @Published  
+- [Day15](https://github.com/DCherish/iOS_N_Swift/tree/main/Day15) `File`  
+  - NSAttributedString vs NSMutableAttributedString, extension+  
+  - UserDefaults, UITabBar, UICollectionView, UIStackView, Localization  
+  - enum ~, SnapKit, Alamofire, OpenAPI(PapagoAPI)  
