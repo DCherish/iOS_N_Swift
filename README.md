@@ -73,4 +73,4 @@
   - enum ~, SnapKit(lib), Alamofire(lib), OpenAPI(PapagoAPI)  
 - [Day16](https://github.com/DCherish/iOS_N_Swift/tree/main/Day16) `File`  
   - Design Pattern(MVP), UIAlertController, UISearchBar, UnitTest(XCTest)  
-  - SnapKit(lib), Alamofire(lib), KingFisher(lib), OpenAPI(NaverAPI,BookSearch)  
+  - Test Coverage, SnapKit(lib), Alamofire(lib), KingFisher(lib), OpenAPI(NaverAPI)  
