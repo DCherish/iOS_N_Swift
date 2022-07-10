@@ -28,12 +28,12 @@ final class MovieListPresenter: NSObject {
     
     init(
         viewController: MovieListProtocol,
-        movieSearchManager: MovieSearchManagerProtocol = MovieSearchManager(),
-        userDefaultsManager: UserDefaultsManagerProtocol = UserDefaultsManager()
+        userDefaultsManager: UserDefaultsManagerProtocol = UserDefaultsManager(),
+        movieSearchManager: MovieSearchManagerProtocol = MovieSearchManager()
     ) {
         self.viewController = viewController
-        self.movieSearchManager = movieSearchManager
         self.userDefaultsManager = userDefaultsManager
+        self.movieSearchManager = movieSearchManager
     }
     
     func viewDidLoad() {

@@ -8,33 +8,64 @@
 import XCTest
 
 class MovieReviewUITests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+    var app: XCUIApplication!
+    
+    override func setUp() {
+        super.setUp()
+        
         continueAfterFailure = false
-
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+        
+        app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+    
+    override func tearDown() {
+        super.tearDown()
+        
+        app = nil
+    }
+    
+    func test_navigationBar_title이_영화평점으로_설정되어_있는지() {
+        let existNavigationBar = app.navigationBars["영화 평점"].exists
+        XCTAssertTrue(existNavigationBar)
+    }
+    
+    func test_searchBar가_존재하는지() {
+        let existSearchBar = app.navigationBars["영화 평점"]
+            .searchFields["Search"].exists
+        XCTAssertTrue(existSearchBar)
+    }
+    
+    func test_searchBar에_CancelButton이_존재하는지() {
+        let navigationBar = app.navigationBars["영화 평점"]
+        navigationBar.searchFields["Search"].tap()
+        
+        let existSearchBarCancelButton = navigationBar
+            .buttons["Cancel"].exists
+        XCTAssertTrue(existSearchBarCancelButton)
+    }
+    
+    enum CellData: String {
+        case existsMovie = "큐 볼"
+        case nonExistsMovie = "라푼젤"
+    }
+    
+    //BDD
+    func test_특정_영화가_즐겨찾기_되어_있는지() {
+        let existCell = app.collectionViews
+            .cells.containing(.staticText, identifier: CellData.existsMovie.rawValue)
+            .element
+            .exists
+        
+        XCTAssertTrue(existCell, "\(CellData.existsMovie.rawValue)이라는 영화가 Cell에 존재합니다.")
+    }
+    
+    func test_특정_영화가_즐겨찾기_되어_있지_않는지() {
+        let existCell = app.collectionViews
+            .cells.containing(.staticText, identifier: CellData.nonExistsMovie.rawValue)
+            .element
+            .exists
+        
+        XCTAssertFalse(existCell, "\(CellData.nonExistsMovie.rawValue)이라는 영화가 Cell에 존재하지 않습니다.")
     }
 }

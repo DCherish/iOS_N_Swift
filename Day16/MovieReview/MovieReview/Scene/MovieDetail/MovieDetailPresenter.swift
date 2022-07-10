@@ -14,19 +14,18 @@ protocol MovieDetailProtocol: AnyObject {
 
 final class MovieDetailPresenter {
     private weak var viewController: MovieDetailProtocol?
-    
     private let userDefaultsManager: UserDefaultsManagerProtocol
     
     private var movie: Movie
     
     init(
         viewController: MovieDetailProtocol,
-        movie: Movie,
-        userDefaultsManager: UserDefaultsManagerProtocol = UserDefaultsManager()
+        userDefaultsManager: UserDefaultsManagerProtocol = UserDefaultsManager(),
+        movie: Movie
     ) {
         self.viewController = viewController
-        self.movie = movie
         self.userDefaultsManager = userDefaultsManager
+        self.movie = movie
     }
     
     func viewDidLoad() {
