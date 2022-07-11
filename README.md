@@ -74,3 +74,7 @@
 - [Day16](https://github.com/DCherish/iOS_N_Swift/tree/main/Day16) `File`  
   - Design Pattern(MVP), UIAlertController, UISearchBar, UnitTest(XCTest)  
   - Test Coverage, SnapKit(lib), Alamofire(lib), KingFisher(lib), OpenAPI(NaverAPI)  
+- [Day17](https://github.com/DCherish/iOS_N_Swift/tree/main/Day17) `File`  
+  - Design Pattern(MVP), UITableView, UIRefreshControl, WKWebView  
+  - CI/CD(Bitrise), UnitTest(XCTest), Test Coverage, TTGTextTagCollectionView(lib)  
+  - SnapKit(lib), Alamofire(lib), extension+(String), OpenAPI(NaverAPI)  
