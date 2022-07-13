@@ -78,3 +78,6 @@
   - Design Pattern(MVP), UITableView, UIRefreshControl, WKWebView  
   - CI/CD(Bitrise), UnitTest(XCTest), Test Coverage, TTGTextTagCollectionView(lib)  
   - SnapKit(lib), Alamofire(lib), extension+(String), OpenAPI(NaverAPI)  
+- [Day18](https://github.com/DCherish/iOS_N_Swift/tree/main/Day18) `File`  
+  - Design Pattern(MVP), UITableView, UIButton.Configuration(iOS 15.0+)  
+  - UIStackView, UserDefaults, UnitTest(XCTest), SnapKit(lib), Floaty(lib)  
