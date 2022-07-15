@@ -388,6 +388,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="clearButtonLabel" destination="xbZ-zK-jDJ" id="vsi-0R-9Vr"/>
                         <outlet property="numberOutputLabel" destination="Zaz-Ks-BMQ" id="yyi-Mi-sSv"/>
                     </connections>
                 </viewController>
@@ -398,55 +399,55 @@
     </scenes>
     <designables>
         <designable name="1jl-7F-pdY">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="38.333333333333336" height="50"/>
         </designable>
         <designable name="B77-Ka-ngS">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="43.333333333333336" height="50"/>
         </designable>
         <designable name="FXJ-Hx-C9f">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="43" height="50"/>
         </designable>
         <designable name="MUp-ID-8bQ">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="42.666666666666664" height="50"/>
         </designable>
         <designable name="OYI-MU-aAo">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="43" height="50"/>
         </designable>
         <designable name="OhE-MF-6pQ">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="43" height="50"/>
         </designable>
         <designable name="VsP-JT-aKv">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="31.333333333333332" height="50"/>
         </designable>
         <designable name="Xbj-yq-q0s">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="42" height="50"/>
         </designable>
         <designable name="Xrs-l1-xbD">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="43" height="50"/>
         </designable>
         <designable name="ZGt-bF-9kx">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="43.333333333333336" height="50"/>
         </designable>
         <designable name="acj-fn-Su6">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="43.333333333333336" height="50"/>
         </designable>
         <designable name="c22-CR-5AH">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="42.666666666666664" height="50"/>
         </designable>
         <designable name="hpj-wa-fTY">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="43.333333333333336" height="50"/>
         </designable>
         <designable name="oV9-K2-ACw">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="43" height="50"/>
         </designable>
         <designable name="s1x-Oj-QSG">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="41.333333333333336" height="50"/>
         </designable>
         <designable name="uKG-Fr-XLg">
-            <size key="intrinsicContentSize" width="30" height="48"/>
+            <size key="intrinsicContentSize" width="43" height="50"/>
         </designable>
         <designable name="xbZ-zK-jDJ">
-            <size key="intrinsicContentSize" width="41" height="48"/>
+            <size key="intrinsicContentSize" width="64.666666666666671" height="50"/>
         </designable>
     </designables>
 </document>

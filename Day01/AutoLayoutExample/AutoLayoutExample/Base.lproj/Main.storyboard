@@ -24,7 +24,7 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAd-O4-FQJ">
                                 <rect key="frame" x="20" y="124" width="374" height="200"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="mmg-Si-e1D"/>
                                 </constraints>
@@ -41,17 +41,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Isz-8K-FUG" firstAttribute="centerX" secondItem="GAd-O4-FQJ" secondAttribute="centerX" id="Ay6-cO-dgu"/>
-                            <constraint firstItem="Isz-8K-FUG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MOq-7I-LKP"/>
                             <constraint firstItem="GAd-O4-FQJ" firstAttribute="top" secondItem="cSf-VW-AmE" secondAttribute="bottom" constant="20" id="X70-7q-99e"/>
                             <constraint firstItem="cSf-VW-AmE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="Y0m-Zk-mVp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GAd-O4-FQJ" secondAttribute="trailing" constant="20" id="YSd-39-LdK"/>
-                            <constraint firstItem="Isz-8K-FUG" firstAttribute="centerX" secondItem="GAd-O4-FQJ" secondAttribute="centerX" id="bRd-K5-Ra9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cSf-VW-AmE" secondAttribute="trailing" constant="24" id="cqC-Jt-ygh"/>
+                            <constraint firstItem="GAd-O4-FQJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g7a-MT-t0L"/>
                             <constraint firstItem="cSf-VW-AmE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="lQt-pA-WG5"/>
-                            <constraint firstItem="Isz-8K-FUG" firstAttribute="centerX" secondItem="GAd-O4-FQJ" secondAttribute="centerX" id="o4n-eq-v9w"/>
                             <constraint firstItem="Isz-8K-FUG" firstAttribute="top" secondItem="GAd-O4-FQJ" secondAttribute="bottom" constant="24" id="pF8-EN-88R"/>
-                            <constraint firstItem="Isz-8K-FUG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vak-yV-wpa"/>
+                            <constraint firstItem="Isz-8K-FUG" firstAttribute="centerX" secondItem="GAd-O4-FQJ" secondAttribute="centerX" id="qFJ-v0-KhK"/>
                             <constraint firstItem="GAd-O4-FQJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vrH-Dr-Ekq"/>
                         </constraints>
                     </view>
@@ -68,8 +65,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

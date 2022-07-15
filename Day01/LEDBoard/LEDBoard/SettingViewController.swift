@@ -22,8 +22,9 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var purpleButton: UIButton!
     @IBOutlet weak var blackButton: UIButton!
     
-    var LEDText: String?
     weak var delegate: LEDBoardSettingDelegate?
+    
+    var LEDText: String?
     var textColor: UIColor = .green
     var backgroundColor: UIColor = .orange
     

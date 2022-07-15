@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var colorView: UIView!
     
+    var state: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -17,7 +19,14 @@ class ViewController: UIViewController {
 
 
     @IBAction func tapChangeColorButton(_ sender: UIButton) {
-        self.colorView.backgroundColor = UIColor.blue
+        if !state {
+            self.colorView.backgroundColor = UIColor.systemGreen
+        } else {
+            self.colorView.backgroundColor = UIColor.systemIndigo
+        }
+        
+        state.toggle()
+        
         print("색상 변경 버튼이 클릭되었습니다.")
     }
 }

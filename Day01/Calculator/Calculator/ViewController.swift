@@ -18,6 +18,7 @@ enum Operation {
 class ViewController: UIViewController {
 
     @IBOutlet weak var numberOutputLabel: UILabel!
+    @IBOutlet weak var clearButtonLabel: UIButton!
     
     var displayNumber = ""
     var firstOperand = ""
@@ -35,6 +36,8 @@ class ViewController: UIViewController {
         if self.numberOutputLabel.text == "0", numberValue == "0" {
             // do nothing
         } else if self.displayNumber.count < 9 {
+            self.clearButtonLabel.titleLabel?.text = "C"
+            self.clearButtonLabel.titleLabel?.textAlignment = .center
             self.displayNumber += numberValue
             self.numberOutputLabel.text = self.displayNumber
         }
@@ -42,6 +45,8 @@ class ViewController: UIViewController {
     
     @IBAction func tapDotButton(_ sender: UIButton) {
         if self.displayNumber.count < 8, !self.displayNumber.contains(".") {
+            self.clearButtonLabel.titleLabel?.text = "C"
+            self.clearButtonLabel.titleLabel?.textAlignment = .center
             self.displayNumber += self.displayNumber.isEmpty ? "0." : "."
             self.numberOutputLabel.text = self.displayNumber
         }
@@ -53,6 +58,8 @@ class ViewController: UIViewController {
         self.secondOperand = ""
         self.result = ""
         self.currentOperation = .unknown
+        self.clearButtonLabel.titleLabel?.text = "AC"
+        self.clearButtonLabel.titleLabel?.textAlignment = .center
         self.numberOutputLabel.text = "0"
     }
     

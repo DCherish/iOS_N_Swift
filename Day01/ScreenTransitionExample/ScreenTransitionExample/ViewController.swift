@@ -44,7 +44,7 @@ class ViewController: UIViewController, SendDataDelegate {
     
     @IBAction func tapCodePresentButton(_ sender: UIButton) {
         guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePresentViewController") as? CodePresentViewController else { return }
-        viewController.modalPresentationStyle = .fullScreen
+//        viewController.modalPresentationStyle = .fullScreen
         viewController.name = "kid"
         viewController.delegate = self
         self.present(viewController, animated: true, completion: nil)

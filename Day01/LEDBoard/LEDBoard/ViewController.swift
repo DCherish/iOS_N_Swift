@@ -14,7 +14,7 @@ class ViewController: UIViewController, LEDBoardSettingDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.contentsLabel.textColor = .green
-        
+        view.backgroundColor = .orange
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -22,7 +22,7 @@ class ViewController: UIViewController, LEDBoardSettingDelegate {
             settingViewController.delegate = self
             settingViewController.LEDText = self.contentsLabel.text
             settingViewController.textColor = self.contentsLabel.textColor
-            settingViewController.backgroundColor = self.view.backgroundColor ?? .orange
+            settingViewController.backgroundColor = self.view.backgroundColor!
         }
     }
     
