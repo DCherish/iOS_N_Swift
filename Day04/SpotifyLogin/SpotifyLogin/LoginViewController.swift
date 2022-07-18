@@ -46,7 +46,6 @@ class LoginViewController: UIViewController {
         let config = GIDConfiguration(clientID: clientID)
         
         GIDSignIn.sharedInstance.signIn(with: config, presenting: self) { [unowned self] user, error in
-            
             if let error = error {
                 print("Error: Google sign in \(error.localizedDescription)")
                 return

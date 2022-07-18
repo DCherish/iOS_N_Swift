@@ -54,49 +54,59 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="iJy-6n-1xd">
                                 <rect key="frame" x="30" y="514" width="354" height="210"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hej-Be-5Mb">
-                                        <rect key="frame" x="66.5" y="0.0" width="221" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hej-Be-5Mb">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="ChC-qK-DlH"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="이메일/비밀번호로 계속하기">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="이메일/비밀번호로 계속하기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <segue destination="I95-tY-yvq" kind="show" id="aXG-ZY-XEE"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lp-bN-Rd3">
-                                        <rect key="frame" x="91.5" y="75" width="171" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lp-bN-Rd3">
+                                        <rect key="frame" x="0.0" y="75" width="354" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="ug1-3y-Ef5"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="logo_google" title="구글로 계속하기" imagePadding="0.0">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="-25" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="-140" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="구글로 계속하기" image="logo_google">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="googleLoginButtonTapped:" destination="3oU-Ze-bx2" eventType="touchUpInside" id="xYS-Xw-FOz"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spp-Q7-kVS">
-                                        <rect key="frame" x="82" y="150" width="190" height="60"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spp-Q7-kVS">
+                                        <rect key="frame" x="0.0" y="150" width="354" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="KpY-ng-6uy"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="logo_apple" title="Apple로 계속하기">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
-                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="-25" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="-123" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Apple로 계속하기" image="logo_apple">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="appleLoginButtonTapped:" destination="3oU-Ze-bx2" eventType="touchUpInside" id="5yw-bX-f64"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="1Lp-bN-Rd3" firstAttribute="leading" secondItem="iJy-6n-1xd" secondAttribute="leading" id="C8h-Xg-1Wq"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Lp-bN-Rd3" secondAttribute="trailing" id="FHa-Dn-qTS"/>
+                                    <constraint firstItem="Spp-Q7-kVS" firstAttribute="leading" secondItem="iJy-6n-1xd" secondAttribute="leading" id="bQL-dk-DAv"/>
+                                    <constraint firstAttribute="trailing" secondItem="hej-Be-5Mb" secondAttribute="trailing" id="bZx-2r-Jc8"/>
+                                    <constraint firstAttribute="trailing" secondItem="Spp-Q7-kVS" secondAttribute="trailing" id="edp-el-YQo"/>
+                                    <constraint firstItem="hej-Be-5Mb" firstAttribute="leading" secondItem="iJy-6n-1xd" secondAttribute="leading" id="wBQ-6k-QHZ"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3ad-yx-kBv"/>

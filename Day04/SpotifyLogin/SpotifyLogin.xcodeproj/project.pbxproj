@@ -82,12 +82,12 @@
 				881399A42845A1E10080F080 /* SceneDelegate.swift */,
 				881399A82845A1E10080F080 /* Main.storyboard */,
 				886C6FC02845FEC0007BF8FC /* MainViewController.swift */,
+				881399B62845A2830080F080 /* LoginViewController.swift */,
 				881399B82845F88C0080F080 /* EnterEmailViewController.swift */,
 				881399AB2845A1E20080F080 /* Assets.xcassets */,
 				881399AD2845A1E20080F080 /* LaunchScreen.storyboard */,
 				881399B02845A1E20080F080 /* Info.plist */,
 				883AA93E284603C300BBEE7D /* GoogleService-Info.plist */,
-				881399B62845A2830080F080 /* LoginViewController.swift */,
 			);
 			path = SpotifyLogin;
 			sourceTree = "<group>";

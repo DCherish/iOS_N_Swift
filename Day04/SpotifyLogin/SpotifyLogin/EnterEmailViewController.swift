@@ -33,7 +33,8 @@ class EnterEmailViewController: UIViewController {
         
         //Navigation Bar 보이기
         navigationController?.navigationBar.isHidden = false
-        navigationController?.navigationBar.backgroundColor = .white
+        navigationController?.navigationBar.backgroundColor = .black
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
