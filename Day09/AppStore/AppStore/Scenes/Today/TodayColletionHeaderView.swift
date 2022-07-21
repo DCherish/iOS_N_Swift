@@ -34,9 +34,9 @@ final class TodayColletionHeaderView: UICollectionReusableView {
             }
         
         dateLabel.snp.makeConstraints {
-            $0.leading.equalToSuperview().inset(16.0)
+            $0.leading.equalToSuperview().offset(16.0)
             $0.trailing.equalToSuperview()
-            $0.top.equalToSuperview().inset(32.0)
+            $0.top.equalToSuperview().offset(32.0)
         }
         
         titleLabel.snp.makeConstraints {

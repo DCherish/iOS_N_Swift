@@ -139,11 +139,11 @@
 			isa = PBXGroup;
 			children = (
 				88E093892852C71D00A5F6FB /* AppViewController.swift */,
-				88E0939528533FB100A5F6FB /* ExchangeCodeButtonView.swift */,
+				88E0938B2853248D00A5F6FB /* FeatureSectionView.swift */,
+				88E0938D28532B0A00A5F6FB /* FeatureSectionCollectionViewCell.swift */,
 				88E093912853320700A5F6FB /* RankingFeatureSectionView.swift */,
 				88E09393285336D300A5F6FB /* RankingFeatureSectionCollectionViewCell.swift */,
-				88E0938D28532B0A00A5F6FB /* FeatureSectionCollectionViewCell.swift */,
-				88E0938B2853248D00A5F6FB /* FeatureSectionView.swift */,
+				88E0939528533FB100A5F6FB /* ExchangeCodeButtonView.swift */,
 				88E0938F28532DFB00A5F6FB /* SeparatorView.swift */,
 			);
 			name = App;

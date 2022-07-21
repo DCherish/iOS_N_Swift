@@ -19,8 +19,15 @@ final class TodayViewController: UIViewController {
         collectionView.dataSource = self
         
         collectionView.backgroundColor = .systemBackground
-        collectionView.register(TodayCollectionViewCell.self, forCellWithReuseIdentifier: "todayCell")
-        collectionView.register(TodayColletionHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "TodayColletionHeaderView")
+        collectionView.register(
+            TodayCollectionViewCell.self,
+            forCellWithReuseIdentifier: "todayCell"
+        )
+        collectionView.register(
+            TodayColletionHeaderView.self,
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+            withReuseIdentifier: "TodayColletionHeaderView"
+        )
         
         return collectionView
     }()
@@ -90,7 +97,12 @@ extension TodayViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let today = todayList[indexPath.item]
         let viewController = AppDetailViewController(today: today)
+        
         present(viewController, animated: true)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        16.0
     }
 }
 

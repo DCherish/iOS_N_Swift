@@ -27,7 +27,12 @@ final class AppViewController: UIViewController {
             $0.height.equalTo(100.0)
         }
         
-        [featureSectonView, rankingFeatureSectionView, exchangeCodeButtonView, spacingView].forEach {
+        [
+            featureSectonView,
+            rankingFeatureSectionView,
+            exchangeCodeButtonView,
+//            spacingView
+        ].forEach {
             stackView.addArrangedSubview($0)
         }
         
