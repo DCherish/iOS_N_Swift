@@ -232,7 +232,7 @@ extension HomeViewController {
 //SwiftUI를 활용한 미리보기
 struct HomeViewController_Previews: PreviewProvider {
     static var previews: some View {
-        Container()
+        Container().edgesIgnoringSafeArea(.all)
     }
     
     struct Container: UIViewControllerRepresentable {

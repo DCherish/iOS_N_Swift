@@ -29,6 +29,8 @@ class HomeViewController: UICollectionViewController {
         contents = getContents()
         mainItem = contents.first?.contentItem.randomElement()
         
+        collectionView.backgroundColor = .black
+        
         //CollectionView Item(Cell) 설정
         collectionView.register(ContentCollectionViewCell.self, forCellWithReuseIdentifier: "ContentCollectionViewCell")
         collectionView.register(ContentCollectionViewRankCell.self, forCellWithReuseIdentifier: "ContentCollectionViewRankCell")
@@ -232,7 +234,7 @@ extension HomeViewController {
 //SwiftUI를 활용한 미리보기
 struct HomeViewController_Previews: PreviewProvider {
     static var previews: some View {
-        HomeViewControllerRepresentable().preferredColorScheme(.dark).edgesIgnoringSafeArea(.all)
+        HomeViewControllerRepresentable().edgesIgnoringSafeArea(.all)
     }
 }
 

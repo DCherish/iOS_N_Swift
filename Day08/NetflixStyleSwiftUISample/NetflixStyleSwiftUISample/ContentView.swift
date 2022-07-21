@@ -18,7 +18,7 @@ struct ContentView: View {
                 
                 NavigationLink($0, destination: netfilxVC)
             }
-            .navigationTitle("SwiftUI to UIKit")
+            .navigationTitle("SwiftUI with UIKit")
         }
     }
 }

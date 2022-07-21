@@ -90,23 +90,25 @@ class ContentCollectionViewMainCell: UICollectionViewCell {
             $0.leading.trailing.equalToSuperview().inset(30)
         }
         
-        [plusButton, infoButton].forEach {
-            $0.titleLabel?.font = .systemFont(ofSize: 13)
-            $0.setTitleColor(.white, for: .normal)
-            $0.imageView?.tintColor = .white
+//        [plusButton, infoButton].forEach {
+//            $0.titleLabel?.font = .systemFont(ofSize: 13)
+//            $0.setTitleColor(.white, for: .normal)
+//            $0.imageView?.tintColor = .white
             
-            $0.adjustVerticalLayout(5)
-        }
+//            $0.adjustVerticalLayout(5)
+//        }
         
         [plusButton, playButton, infoButton].forEach {
             contentStackView.addArrangedSubview($0)
         }
         
-        plusButton.setTitle("내가 찜한 컨텐츠", for: .normal)
+//        plusButton.setTitle("내가 찜한 컨텐츠", for: .normal)
+        plusButton.setLayout("내가 찜한 컨텐츠", 13.0, 5.0)
         plusButton.setImage(UIImage(systemName: "plus"), for: .normal)
         plusButton.addTarget(self, action: #selector(plusButtonTapped), for: .touchUpInside)
         
-        infoButton.setTitle("정보", for: .normal)
+//        infoButton.setTitle("정보", for: .normal)
+        infoButton.setLayout("정보", 13.0, 5.0)
         infoButton.setImage(UIImage(systemName: "info.circle"), for: .normal)
         infoButton.addTarget(self, action: #selector(infoButtonTapped), for: .touchUpInside)
         
