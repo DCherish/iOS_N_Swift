@@ -34,8 +34,8 @@ final class StationDetailCollectionViewCell: UICollectionViewCell {
         [lineLabel, remainLabel].forEach { addSubview($0) }
         
         lineLabel.snp.makeConstraints {
-            $0.leading.equalToSuperview().inset(16.0)
-            $0.top.equalToSuperview().inset(16.0)
+            $0.leading.equalToSuperview().offset(16.0)
+            $0.top.equalToSuperview().offset(16.0)
         }
         
         remainLabel.snp.makeConstraints {
