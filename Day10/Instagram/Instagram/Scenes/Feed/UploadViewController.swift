@@ -96,8 +96,8 @@ private extension UploadViewController {
         let imageViewInset: CGFloat = 16.0
         
         imageView.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide).inset(imageViewInset)
-            $0.leading.equalToSuperview().inset(imageViewInset)
+            $0.top.equalTo(view.safeAreaLayoutGuide).offset(imageViewInset)
+            $0.leading.equalToSuperview().offset(imageViewInset)
             $0.width.equalTo(100.0)
             $0.height.equalTo(imageView.snp.width)
         }

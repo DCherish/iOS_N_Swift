@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 
 final class ProfileViewController: UIViewController {
+    let spacing: CGFloat = 1.0
     
     private lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()
@@ -66,8 +67,8 @@ final class ProfileViewController: UIViewController {
 
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = 1.0
-        layout.minimumInteritemSpacing = 0.5
+        layout.minimumLineSpacing = spacing
+        layout.minimumInteritemSpacing = spacing
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .systemBackground
@@ -102,7 +103,7 @@ extension ProfileViewController: UICollectionViewDataSource {
 
 extension ProfileViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width: CGFloat = (collectionView.frame.width / 3) - 1.0
+        let width: CGFloat = (collectionView.frame.width - 2 * spacing) / 3
         return CGSize(width: width, height: width)
     }
 }
@@ -160,8 +161,8 @@ private extension ProfileViewController {
         let inset: CGFloat = 16.0
 
         profileImageView.snp.makeConstraints {
-            $0.top.equalTo(view.safeAreaLayoutGuide).inset(inset)
-            $0.leading.equalToSuperview().inset(inset)
+            $0.top.equalTo(view.safeAreaLayoutGuide).offset(inset)
+            $0.leading.equalToSuperview().offset(inset)
             $0.width.equalTo(80.0)
             $0.height.equalTo(profileImageView.snp.width)
         }
@@ -191,8 +192,8 @@ private extension ProfileViewController {
         }
         
         collectionView.snp.makeConstraints {
-            $0.leading.equalToSuperview().inset(1.0)
-            $0.trailing.equalToSuperview().inset(1.0)
+            $0.leading.equalToSuperview().offset(spacing)
+            $0.trailing.equalToSuperview().inset(spacing)
             $0.top.equalTo(buttonStackView.snp.bottom).offset(16.0)
             $0.bottom.equalToSuperview()
         }

@@ -57,7 +57,7 @@ extension StationSearchViewController: UISearchBarDelegate {
         tableView.isHidden = false
     }
     
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         tableView.isHidden = true
         stations = []
     }

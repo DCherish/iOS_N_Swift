@@ -20,10 +20,19 @@ final class FeedTableViewCell: UITableViewCell {
     
     private lazy var likeButton: UIButton = {
         let button = UIButton()
-        button.setImage(systemName: "message")
+        button.setImage(systemName: "heart.fill")
+        button.addTarget(self, action: #selector(tapLikeButton), for: .touchUpInside)
         
         return button
     }()
+    
+    @objc func tapLikeButton() {
+        if likeButton.currentImage == UIImage(systemName: "heart.fill") {
+            likeButton.setImage(systemName: "heart")
+        } else {
+            likeButton.setImage(systemName: "heart.fill")
+        }
+    }
     
     private lazy var commentButton: UIButton = {
         let button = UIButton()
