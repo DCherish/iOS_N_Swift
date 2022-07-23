@@ -139,7 +139,7 @@ let factory: Observable<String> = Observable.deferred {
     flag = !flag
     
     if flag {
-        return Observable.of("☝️")
+        return Observable.of("👆")
     } else {
         return Observable.of("👇")
     }
