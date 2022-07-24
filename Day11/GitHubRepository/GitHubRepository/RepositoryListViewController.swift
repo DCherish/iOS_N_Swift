@@ -19,15 +19,17 @@ class RepositoryListViewController: UITableViewController {
         
         title = organization + " Repositories"
         
-        self.refreshControl = UIRefreshControl()
-        let refreshControl = self.refreshControl!
+        let refreshControl = UIRefreshControl()
+        
         refreshControl.backgroundColor = .systemBackground
         refreshControl.tintColor = .darkGray
         refreshControl.attributedTitle = NSAttributedString(string: "당겨서 새로고침")
         refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
         
+        self.refreshControl = refreshControl
+        
         tableView.register(RepositoryListCell.self, forCellReuseIdentifier: "RepositoryListCell")
-        tableView.rowHeight = 140
+//        tableView.rowHeight = 140
     }
     
     @objc func refresh() {
@@ -38,7 +40,8 @@ class RepositoryListViewController: UITableViewController {
     }
     
     func fetchRepositories(of organization: String) {
-        Observable.from([organization])
+//        Observable.from([organization])
+        Observable.just(organization)
             .map { organization -> URL in
                 return URL(string: "https://api.github.com/orgs/\(organization)/repos")!
             }
@@ -110,6 +113,7 @@ extension RepositoryListViewController {
         }
         
         cell.repository = currentRepos
+        cell.setup()
         
         return cell
     }
