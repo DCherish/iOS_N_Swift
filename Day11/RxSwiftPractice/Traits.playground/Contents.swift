@@ -58,6 +58,8 @@ Observable<String>.just("✅")
 print("-----Single3-----")
 Observable<String>.create { observer -> Disposable in
     observer.onError(TraitsError.single)
+//    observer.onNext("✅")
+//    observer.onCompleted()
     return Disposables.create()
 }
 .asSingle()
