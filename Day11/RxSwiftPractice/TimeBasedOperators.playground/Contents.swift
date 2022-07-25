@@ -22,7 +22,6 @@ parrot
 Hello.onNext("#3 안녕하세요")
 
 print("-----ReplayAll-----")
-
 let dr_Strange = PublishSubject<String>()
 let timeStone = dr_Strange.replayAll()
 timeStone.connect()
@@ -36,13 +35,16 @@ timeStone
     })
     .disposed(by: disposeBag)
 
+dr_Strange.onNext("도르마무")
+dr_Strange.onNext("거래를 하러왔다")
+
 //print("-----Buffer-----")
 //let source = PublishSubject<String>()
 //
 //var count = 0
 //let timer = DispatchSource.makeTimerSource()
 //
-//timer.schedule(deadline: .now() + 2, repeating: .seconds(1))
+//timer.schedule(deadline: .now() + 3, repeating: .seconds(1))
 //timer.setEventHandler {
 //    count += 1
 //    source.onNext("\(count)")
@@ -112,14 +114,14 @@ timeStone
 //print("-----Delay-----")
 //let delaySubject = PublishSubject<Int>()
 //
-//var delaySubjectCount = 0
-//let delaySubjectTimerSource = DispatchSource.makeTimerSource()
-//delaySubjectTimerSource.schedule(deadline: .now(), repeating: .seconds(1))
-//delaySubjectTimerSource.setEventHandler {
-//    delaySubjectCount += 1
-//    delaySubject.onNext(delaySubjectCount)
+//var delayCount = 0
+//let delayTimerSource = DispatchSource.makeTimerSource()
+//delayTimerSource.schedule(deadline: .now(), repeating: .seconds(1))
+//delayTimerSource.setEventHandler {
+//    delayCount += 1
+//    delaySubject.onNext(delayCount)
 //}
-//delaySubjectTimerSource.resume()
+//delayTimerSource.resume()
 //
 //delaySubject
 //    .delay(.seconds(3), scheduler: MainScheduler.instance)
@@ -127,7 +129,7 @@ timeStone
 //        print($0)
 //    })
 //    .disposed(by: disposeBag)
-//
+
 //print("-----Interval-----")
 //Observable<Int>
 //    .interval(.seconds(3), scheduler: MainScheduler.instance)
@@ -139,7 +141,7 @@ timeStone
 //print("-----Timer-----")
 //Observable<Int>
 //    .timer(
-//        .seconds(1),
+//        .seconds(5),
 //        period: .seconds(2),
 //        scheduler:  MainScheduler.instance
 //    ).subscribe(onNext: {
@@ -159,8 +161,7 @@ doNotTappedError.rx.tap
         print("tap")
     })
     .timeout(.seconds(5), scheduler: MainScheduler.instance)
-    .subscribe(onNext: {
+    .subscribe {
         print($0)
-    })
+    }
     .disposed(by: disposeBag)
-    

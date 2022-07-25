@@ -191,7 +191,7 @@ go.onNext(Void())
 go.onNext(Void())
 go.onNext(Void())
 
-print("-----Amb-----")
+print("-----Amb-----") // ambiguous
 let bus1 = PublishSubject<String>()
 let bus2 = PublishSubject<String>()
 
@@ -202,7 +202,6 @@ busstop
         print($0)
     })
     .disposed(by: disposeBag)
-
 
 bus2.onNext("버스2-승객0: 👩🏾‍💼")
 bus1.onNext("버스1-승객0: 🧑🏼‍💼")
@@ -261,7 +260,7 @@ Observable.from((1...10))
     })
     .disposed(by: disposeBag)
 
-print("-----Reduce-----")
+print("-----Scan-----")
 Observable.from((1...10))
 //    .scan(0, accumulator: { summary, newValue in
 //        return summary + newValue
