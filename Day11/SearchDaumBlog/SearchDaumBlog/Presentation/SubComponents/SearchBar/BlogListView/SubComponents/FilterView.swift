@@ -39,7 +39,7 @@ class FilterView: UITableViewHeaderFooterView {
     
     private func attribute() {
         sortButton.setImage(UIImage(systemName: "list.bullet"), for: .normal)
-        bottomBorder.backgroundColor = .lightGray
+        bottomBorder.backgroundColor = .quaternaryLabel
     }
     
     private func layout() {
@@ -50,12 +50,12 @@ class FilterView: UITableViewHeaderFooterView {
         sortButton.snp.makeConstraints {
             $0.top.equalToSuperview()
             $0.trailing.equalToSuperview().inset(12)
-            $0.width.height.equalTo(28)
+            $0.width.height.equalTo(BlogListView.tableViewHeaderHeight)
         }
         
         bottomBorder.snp.makeConstraints {
             $0.top.equalTo(sortButton.snp.bottom)
-            $0.leading.trailing.bottom.equalToSuperview()
+            $0.leading.trailing.equalToSuperview()
             $0.height.equalTo(0.5)
         }
     }

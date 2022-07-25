@@ -70,7 +70,6 @@ class MainViewController: UIViewController {
                     }
             }
         
-        
         //FilterView를 선택했을 때 나오는 alertsheet를 선택했을 때 type
         let sortedType = alertActionTapped
             .filter {
@@ -101,11 +100,6 @@ class MainViewController: UIViewController {
             .bind(to: listView.cellData)
             .disposed(by: disposeBag)
         
-        let alertSheetForSorting = listView.headerView.sortButtonTapped
-            .map { _ -> Alert in
-                return Alert(title: nil, message: nil, actions: [.title, .datetime, .cancel], style: .actionSheet)
-            }
-        
         let alertForErrorMessage = blogError
             .map { message -> Alert in
                 return (
@@ -116,10 +110,15 @@ class MainViewController: UIViewController {
                 )
             }
         
+        let alertSheetForSorting = listView.headerView.sortButtonTapped
+            .map { _ -> Alert in
+                return Alert(title: nil, message: nil, actions: [.title, .datetime, .cancel], style: .actionSheet)
+            }
+        
         Observable
             .merge(
-                alertSheetForSorting,
-                alertForErrorMessage
+                alertForErrorMessage,
+                alertSheetForSorting
             )
             .asSignal(onErrorSignalWith: .empty())
             .flatMapLatest { alert -> Signal<AlertAction> in
@@ -188,7 +187,10 @@ extension MainViewController {
         }
     }
     
-    func presentAlertcontroller<Action: AlertActionConvertible>(_ alertController: UIAlertController, actions: [Action]) -> Signal<Action> {
+    func presentAlertcontroller<Action: AlertActionConvertible>(
+        _ alertController: UIAlertController,
+        actions: [Action]
+    ) -> Signal<Action> {
         if actions.isEmpty { return .empty() }
         return Observable
             .create { [weak self] observer in

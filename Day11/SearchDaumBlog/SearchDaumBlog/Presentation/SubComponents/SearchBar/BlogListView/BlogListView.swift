@@ -10,12 +10,17 @@ import RxSwift
 import RxCocoa
 
 class BlogListView: UITableView {
+    static let tableViewHeaderHeight: CGFloat = 36.0
+    
     let disposeBag = DisposeBag()
     
     let headerView = FilterView(
         frame: CGRect(
             origin: .zero,
-            size: CGSize(width: UIScreen.main.bounds.width, height: 50)
+            size: CGSize(
+                width: UIScreen.main.bounds.width,
+                height: tableViewHeaderHeight
+            )
         )
     )
     
@@ -38,7 +43,10 @@ class BlogListView: UITableView {
             .asDriver(onErrorJustReturn: [])
             .drive(self.rx.items) { tv, row, data in
                 let index = IndexPath(row: row, section: 0)
-                let cell = tv.dequeueReusableCell(withIdentifier: "BlogListCell", for: index) as! BlogListCell
+                let cell = tv.dequeueReusableCell(
+                    withIdentifier: "BlogListCell",
+                    for: index
+                ) as! BlogListCell
                 cell.setData(data)
                 
                 return cell

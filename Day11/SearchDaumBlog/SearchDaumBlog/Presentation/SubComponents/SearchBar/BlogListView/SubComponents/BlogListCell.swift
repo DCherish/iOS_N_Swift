@@ -33,7 +33,6 @@ class BlogListCell: UITableViewCell {
             $0.trailing.lessThanOrEqualTo(thumbnailImageView.snp.leading).offset(-8)
         }
 
-        
         thumbnailImageView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.top.trailing.bottom.equalToSuperview().inset(8)

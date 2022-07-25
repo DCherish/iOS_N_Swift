@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		881410DB288E92B1006935C0 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881410DA288E92B1006935C0 /* Date+.swift */; };
 		887B27D72859C78400066AEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887B27D62859C78400066AEB /* AppDelegate.swift */; };
 		887B27D92859C78400066AEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887B27D82859C78400066AEB /* SceneDelegate.swift */; };
 		887B27E02859C78500066AEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 887B27DF2859C78500066AEB /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		881410DA288E92B1006935C0 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		887B27D32859C78400066AEB /* SearchDaumBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchDaumBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		887B27D62859C78400066AEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		887B27D82859C78400066AEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,7 +99,8 @@
 		887B28032859DCF800066AEB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				887E6A492859E10A008E539E /* MainViewController */,
+				887B27F72859C89F00066AEB /* MainViewController.swift */,
+				887E6A482859E0FC008E539E /* SubComponents */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -108,6 +111,7 @@
 				887B28012859DCF300066AEB /* BlogListCellData.swift */,
 				887E6A4D2859E24B008E539E /* AlertActionConvertible.swift */,
 				887E6A4F285A02CA008E539E /* DKBlog.swift */,
+				881410DA288E92B1006935C0 /* Date+.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -118,15 +122,6 @@
 				887E6A4A2859E11B008E539E /* SearchBar */,
 			);
 			path = SubComponents;
-			sourceTree = "<group>";
-		};
-		887E6A492859E10A008E539E /* MainViewController */ = {
-			isa = PBXGroup;
-			children = (
-				887B27F72859C89F00066AEB /* MainViewController.swift */,
-				887E6A482859E0FC008E539E /* SubComponents */,
-			);
-			path = MainViewController;
 			sourceTree = "<group>";
 		};
 		887E6A4A2859E11B008E539E /* SearchBar */ = {
@@ -247,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				881410DB288E92B1006935C0 /* Date+.swift in Sources */,
 				887B27F82859C89F00066AEB /* MainViewController.swift in Sources */,
 				887B28002859DCEC00066AEB /* BlogListCell.swift in Sources */,
 				887E6A50285A02CA008E539E /* DKBlog.swift in Sources */,
