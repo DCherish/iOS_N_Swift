@@ -32,7 +32,7 @@ struct MainViewModel {
             .startWith("카테고리 선택")
         
         let price = Observable.just("₩ 가격 (선택사항)")
-        let detail = Observable.just("내용을 입력하세요")
+        let detail = Observable.just("내용을 입력해주세요.")
         
         self.cellData = Observable
             .combineLatest(title, category, price, detail) {

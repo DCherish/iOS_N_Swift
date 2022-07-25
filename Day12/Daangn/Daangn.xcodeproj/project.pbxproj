@@ -96,9 +96,9 @@
 		8842CA962861D4040087114A /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
+				8842CA922861D1320087114A /* MainViewController.swift */,
 				8842CA942861D1DC0087114A /* MainViewModel.swift */,
 				8842CAAF2862D5060087114A /* MainModel.swift */,
-				8842CA922861D1320087114A /* MainViewController.swift */,
 				8842CA9B2861D4260087114A /* TitleTextFieldCell */,
 				8842CAA92862CFEE0087114A /* PriceTextFieldCell */,
 				8842CAAE2862D0730087114A /* DetailWriteFormCell */,
@@ -135,8 +135,8 @@
 		8842CAA42861D8D60087114A /* CategoryViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8842CAA02861D5C70087114A /* CategoryViewModel.swift */,
 				8842CAA22861D6C40087114A /* CategoryListViewController.swift */,
+				8842CAA02861D5C70087114A /* CategoryViewModel.swift */,
 			);
 			path = CategoryViewController;
 			sourceTree = "<group>";
@@ -144,8 +144,8 @@
 		8842CAA92862CFEE0087114A /* PriceTextFieldCell */ = {
 			isa = PBXGroup;
 			children = (
-				8842CAA52861D8EF0087114A /* PriceTextFieldCellViewModel.swift */,
 				8842CAA72861DA1D0087114A /* PriceTextFieldCell.swift */,
+				8842CAA52861D8EF0087114A /* PriceTextFieldCellViewModel.swift */,
 			);
 			path = PriceTextFieldCell;
 			sourceTree = "<group>";

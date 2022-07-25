@@ -27,7 +27,9 @@ class TitleTextFieldCell: UITableViewCell {
     }
     
     func bind(_ viewModel: TitleTextFieldCellViewModel) {
-        titleInputField.rx.text.bind(to: viewModel.titleText).disposed(by: disposeBag)
+        titleInputField.rx.text
+            .bind(to: viewModel.titleText)
+            .disposed(by: disposeBag)
     }
     
     private func attribute() {
