@@ -14,7 +14,8 @@ struct CenterDetailView: View {
     var body: some View {
         VStack {
             MapView(coordination: center.coordinate)
-                .ignoresSafeArea(edges: .all)
+//                .ignoresSafeArea(edges: .all)
+//                .ignoresSafeArea(edges: [.leading, .trailing, .bottom])
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             CenterRow(center: center)
         }

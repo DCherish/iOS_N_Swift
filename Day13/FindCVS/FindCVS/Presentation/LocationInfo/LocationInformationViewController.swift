@@ -103,7 +103,7 @@ class LocationInformationViewController: UIViewController {
         
         detailList.snp.makeConstraints {
             $0.centerX.leading.trailing.equalToSuperview()
-            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(8)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).offset(-8)
             $0.top.equalTo(mapView.snp.bottom)
         }
     }
