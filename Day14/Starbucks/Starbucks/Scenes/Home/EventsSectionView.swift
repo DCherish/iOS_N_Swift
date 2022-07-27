@@ -25,7 +25,7 @@ struct EventsSectionView: View {
             .padding(.horizontal, 16.0)
             
             ScrollView(.horizontal, showsIndicators: false) {
-                LazyHStack(spacing: 16.0) {
+                LazyHStack(spacing: 8.0) {
                     ForEach(events) { event in
                         EventsSectionItemView(event: event)
                     }

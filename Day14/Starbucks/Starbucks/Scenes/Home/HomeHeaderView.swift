@@ -18,8 +18,10 @@ struct HomeHeaderView: View {
                 반갑습니다!☕️
                 """)
                     .font(.largeTitle)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+//                    .frame(maxWidth: .infinity, alignment: .leading)
                     .fixedSize(horizontal: false, vertical: true)
+                
+                Spacer()
                 
                 Button(
                     action: {

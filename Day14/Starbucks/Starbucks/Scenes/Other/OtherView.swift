@@ -28,16 +28,16 @@ struct OtherView: View {
                     )
                 }
             }
-                .listStyle(GroupedListStyle())
-                .navigationTitle("Other")
-                .toolbar(content: {
-                    NavigationLink(
-                        destination: SettingView(),
-                        label: {
-                            Image(systemName: "gear")
-                        }
-                    )
-                })
+            .listStyle(GroupedListStyle())
+            .navigationTitle("Other")
+            .toolbar(content: {
+                NavigationLink(
+                    destination: SettingView(),
+                    label: {
+                        Image(systemName: "gear")
+                    }
+                )
+            })
         }
     }
 }

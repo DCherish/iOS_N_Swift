@@ -15,10 +15,10 @@ struct SettingView: View {
             }
             
             Button("회원 정보 수정") {}
-                .foregroundColor(.black)
+                .accentColor(.black)
 //                .font(.body) // default
-            Button("회원 정보 수정") {}
-                .foregroundColor(.black)
+            Button("회원 탈퇴") {}
+                .accentColor(.black)
         }
         .navigationTitle("설정")
         .listStyle(GroupedListStyle())
@@ -41,7 +41,7 @@ struct SettingUserInfoSectionView: View {
             Button(action: {}) {
                 Text("로그아웃")
                     .font(.system(size: 14.0, weight: .bold, design: .default))
-                    .foregroundColor(.green)
+                    .accentColor(.green)
             }
                 .padding(8.0)
                 .overlay(Capsule().stroke(Color.green))
