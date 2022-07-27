@@ -7,6 +7,7 @@
 
 import SnapKit
 import UIKit
+import Toast
 
 final class TranslateViewController: UIViewController {
     private var translatorManager = TranslatorManager()
@@ -157,7 +158,7 @@ private extension TranslateViewController {
         
         resultLabel.snp.makeConstraints {
             $0.leading.equalTo(resultBaseView.snp.leading).offset(defaultSpacing2)
-            $0.trailing.equalTo(resultBaseView.snp.trailing).inset(defaultSpacing2)
+            $0.trailing.equalTo(resultBaseView.snp.trailing).offset(-1 * defaultSpacing2)
             $0.top.equalTo(resultBaseView.snp.top).offset(defaultSpacing2)
         }
         
@@ -169,7 +170,7 @@ private extension TranslateViewController {
         }
         
         copyButton.snp.makeConstraints {
-            $0.leading.equalTo(bookmarkButton.snp.trailing).inset(8.0)
+            $0.leading.equalTo(bookmarkButton.snp.trailing).offset(-1 * 8.0)
             $0.top.equalTo(bookmarkButton.snp.top)
             $0.width.equalTo(defaultLength)
             $0.height.equalTo(defaultLength)
@@ -183,7 +184,7 @@ private extension TranslateViewController {
         
         sourceLabel.snp.makeConstraints {
             $0.leading.equalTo(sourceLabelBaseView.snp.leading).offset(defaultSpacing2)
-            $0.trailing.equalTo(sourceLabelBaseView.snp.trailing).inset(defaultSpacing2)
+            $0.trailing.equalTo(sourceLabelBaseView.snp.trailing).offset(-1 * defaultSpacing2)
             $0.top.equalTo(sourceLabelBaseView.snp.top).offset(defaultSpacing2)
         }
     }
@@ -239,11 +240,21 @@ private extension TranslateViewController {
         
         UserDefaults.standard.bookmarks = [newBookmark] + currentBookmarks
         
-        print(UserDefaults.standard.bookmarks)
+        var style = ToastStyle()
+
+        style.messageFont = .systemFont(ofSize: 16.0, weight: .bold)
+        style.backgroundColor = UIColor.mainTintColor
+        view.makeToast("저장완료 😎", duration: 1.0, style: style)
     }
     
     @objc func didTapCopyButton() {
         UIPasteboard.general.string = resultLabel.text
+        
+        var style = ToastStyle()
+
+        style.messageFont = .systemFont(ofSize: 16.0, weight: .bold)
+        style.backgroundColor = UIColor.mainTintColor
+        view.makeToast("복사되었습니다 🙂", duration: 1.0, style: style)
     }
     
     @objc func didTapSourceLabelBaseView() {

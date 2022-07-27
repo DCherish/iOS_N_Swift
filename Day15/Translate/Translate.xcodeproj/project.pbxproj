@@ -28,6 +28,7 @@
 		8825F85D287818F600472DBA /* TranslateResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825F85C287818F600472DBA /* TranslateResponseModel.swift */; };
 		8825F85F2878649100472DBA /* TranslatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8825F85E2878649100472DBA /* TranslatorManager.swift */; };
 		88260B0E2878879A007D0B8D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88260B102878879A007D0B8D /* Localizable.strings */; };
+		88BB2B4728917C3000494215 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 88BB2B4628917C3000494215 /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88BB2B4728917C3000494215 /* Toast in Frameworks */,
 				8825F83D287727AB00472DBA /* SnapKit in Frameworks */,
 				8825F840287727C100472DBA /* Alamofire in Frameworks */,
 			);
@@ -179,6 +181,7 @@
 			packageProductDependencies = (
 				8825F83C287727AB00472DBA /* SnapKit */,
 				8825F83F287727C100472DBA /* Alamofire */,
+				88BB2B4628917C3000494215 /* Toast */,
 			);
 			productName = Translate;
 			productReference = 8825F8242877277000472DBA /* Translate.app */;
@@ -212,6 +215,7 @@
 			packageReferences = (
 				8825F83B287727AB00472DBA /* XCRemoteSwiftPackageReference "SnapKit" */,
 				8825F83E287727C100472DBA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				88BB2B4528917C3000494215 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = 8825F8252877277000472DBA /* Products */;
 			projectDirPath = "";
@@ -493,6 +497,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		88BB2B4528917C3000494215 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -505,6 +517,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8825F83E287727C100472DBA /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		88BB2B4628917C3000494215 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88BB2B4528917C3000494215 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
