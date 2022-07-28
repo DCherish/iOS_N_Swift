@@ -244,7 +244,7 @@ private extension TranslateViewController {
 
         style.messageFont = .systemFont(ofSize: 16.0, weight: .bold)
         style.backgroundColor = UIColor.mainTintColor
-        view.makeToast("저장완료 😎", duration: 1.0, style: style)
+        view.makeToast(NSLocalizedString("Save_Success", comment: "저장완료"), duration: 1.0, style: style)
     }
     
     @objc func didTapCopyButton() {
@@ -254,7 +254,7 @@ private extension TranslateViewController {
 
         style.messageFont = .systemFont(ofSize: 16.0, weight: .bold)
         style.backgroundColor = UIColor.mainTintColor
-        view.makeToast("복사되었습니다 🙂", duration: 1.0, style: style)
+        view.makeToast(NSLocalizedString("Copy_Success", comment: "복사"), duration: 1.0, style: style)
     }
     
     @objc func didTapSourceLabelBaseView() {

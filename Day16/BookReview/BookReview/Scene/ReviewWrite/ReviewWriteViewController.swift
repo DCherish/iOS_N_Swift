@@ -29,7 +29,7 @@ final class ReviewWriteViewController: UIViewController {
         textView.text = presenter.contentsTextViewPlaceHolderText
         textView.font = .systemFont(ofSize: 16.0, weight: .medium)
         
-        textView.delegate = self
+        textView.delegate = self // 어떠한 데이터 다루는 것이 아니라 단순히 view의 ui action 처리에 가까우므로
         
         return textView
     }()
@@ -82,7 +82,11 @@ extension ReviewWriteViewController: ReviewWriteProtocol {
     }
     
     func showCloseAlertController() {
-        let alertController = UIAlertController(title: "작성중인 내용이 있습니다. 정말 닫으시겠습니까?", message: nil, preferredStyle: .alert)
+        let alertController = UIAlertController(
+            title: "작성중인 내용이 있습니다. 정말 닫으시겠습니까?",
+            message: nil,
+            preferredStyle: .alert
+        )
         
         let closeAction = UIAlertAction(title: "닫기", style: .destructive) { [weak self] _ in
             self?.dismiss(animated: true)
@@ -131,9 +135,7 @@ extension ReviewWriteViewController: ReviewWriteProtocol {
     
     func presentToSearchBookViewController() {
         let viewController = UINavigationController(
-            rootViewController: SearchBookViewController(
-            searchBookDelegate: presenter
-            )
+            rootViewController: SearchBookViewController(searchBookDelegate: presenter)
         )
         
         present(viewController, animated: true)

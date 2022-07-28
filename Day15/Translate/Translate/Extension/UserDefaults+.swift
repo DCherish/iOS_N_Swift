@@ -15,7 +15,7 @@ extension UserDefaults {
     var bookmarks: [Bookmark] {
         get {
             guard let data = UserDefaults.standard.data(forKey: Key.bookmarks.rawValue) else { return [] }
-            
+
             return (try? PropertyListDecoder().decode([Bookmark].self, from: data)) ?? []
         }
         set {

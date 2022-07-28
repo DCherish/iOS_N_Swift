@@ -21,3 +21,7 @@
 
 // Placeholder
 "Enter_text" = "텍스트 입력";
+
+// Toast
+"Save_Success" = "저장완료 😎";
+"Copy_Success" = "복사되었습니다 🙂";
