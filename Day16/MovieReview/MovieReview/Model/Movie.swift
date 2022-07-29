@@ -43,7 +43,7 @@ struct Movie: Codable {
         actor: String,
         director: String,
         pubDate: String,
-        isLiked: Bool = false
+        isLiked: Bool
     ) {
         self.title = title
         self.image = imageURL

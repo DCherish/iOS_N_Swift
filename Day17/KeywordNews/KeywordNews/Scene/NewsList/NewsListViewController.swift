@@ -64,6 +64,7 @@ extension NewsListViewController: NewsListProtocol {
     func setupNavigationBar() {
         navigationItem.title = "뉴스"
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .always
     }
     
     func setupLayout() {

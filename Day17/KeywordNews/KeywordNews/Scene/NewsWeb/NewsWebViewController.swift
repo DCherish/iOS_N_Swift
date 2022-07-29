@@ -14,7 +14,7 @@ final class NewsWebViewController: UIViewController {
     
     private let webView = WKWebView()
     
-    private let rightBarButtonItem = UIBarButtonItem(
+    private lazy var rightBarButtonItem = UIBarButtonItem(
         image: UIImage(systemName: "link"),
         style: .plain,
         target: self,
@@ -43,8 +43,9 @@ final class NewsWebViewController: UIViewController {
 
 private extension NewsWebViewController {
     func setupNavigationBar() {
-        navigationItem.title = news.title.htmlToString
         navigationController?.navigationBar.prefersLargeTitles = false
+        
+        navigationItem.title = news.title.htmlToString
         
         navigationItem.rightBarButtonItem = rightBarButtonItem
     }

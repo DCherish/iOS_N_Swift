@@ -50,7 +50,7 @@ class MovieReviewUITests: XCTestCase {
         case nonExistsMovie = "라푼젤"
     }
     
-    //BDD
+    // BDD
     func test_특정_영화가_즐겨찾기_되어_있는지() {
         let existCell = app.collectionViews
             .cells.containing(.staticText, identifier: CellData.existsMovie.rawValue)

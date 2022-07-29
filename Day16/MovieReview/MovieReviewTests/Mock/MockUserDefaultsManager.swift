@@ -13,6 +13,7 @@ final class MockUserDefaultsManager: UserDefaultsManagerProtocol {
     var isCalledGetMovies = false
     var isCalledAddMovie = false
     var isCalledRemoveMovie = false
+    var isCalledFindMovie = false
     
     func getMovies() -> [Movie] {
         isCalledGetMovies = true
@@ -25,5 +26,9 @@ final class MockUserDefaultsManager: UserDefaultsManagerProtocol {
     
     func removeMovie(_ value: Movie) {
         isCalledRemoveMovie = true
+    }
+    
+    func findMovie(_ value: Movie) -> Movie? {
+        isCalledFindMovie = true
     }
 }

@@ -21,7 +21,7 @@ class MovieDetailPresenterTests: XCTestCase {
         
         viewController = MockMovieDetailViewController()
         userDefaultsManager = MockUserDefaultsManager()
-        movie = Movie(title: "", imageURL: "", userRating: "", actor: "", director: "", pubDate: "")
+        movie = Movie(title: "", imageURL: "", userRating: "", actor: "", director: "", pubDate: "", isLiked: false)
         
         sut = MovieDetailPresenter(
             viewController: viewController,

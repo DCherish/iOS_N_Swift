@@ -25,7 +25,7 @@ final class MovieDetailPresenter {
     ) {
         self.viewController = viewController
         self.userDefaultsManager = userDefaultsManager
-        self.movie = movie
+        self.movie = userDefaultsManager.findMovie(movie) ?? movie
     }
     
     func viewDidLoad() {

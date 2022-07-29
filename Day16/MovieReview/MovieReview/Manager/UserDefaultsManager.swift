@@ -11,6 +11,7 @@ protocol UserDefaultsManagerProtocol {
     func getMovies() -> [Movie]
     func addMovie(_ newValue: Movie)
     func removeMovie(_ value: Movie)
+    func findMovie(_ value: Movie) -> Movie?
 }
 
 //    extension UserDefaultsManagerProtocol {
@@ -40,6 +41,16 @@ struct UserDefaultsManager: UserDefaultsManagerProtocol {
         let newCurrentMovies = currentMovies.filter { $0.title != value.title }
         
         saveMovie(newCurrentMovies)
+    }
+
+    func findMovie(_ value: Movie) -> Movie? {
+        let currentMovies: [Movie] = getMovies()
+        var currentMovie = currentMovies.filter { $0.title == value.title }
+
+        guard !currentMovie.isEmpty else { return nil }
+        currentMovie[0].isLiked = true
+        
+        return currentMovie[0]
     }
     
     private func saveMovie(_ newValue: [Movie]) {
