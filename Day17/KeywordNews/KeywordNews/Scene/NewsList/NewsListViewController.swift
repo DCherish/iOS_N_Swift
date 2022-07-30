@@ -46,11 +46,6 @@ class NewsListViewController: UIViewController {
         super.viewDidLoad()
         
         presenter.viewDidLoad()
-        
-        NewsSearchManager()
-            .request(from: "아이폰", start: 1, display: 20) { news in
-                print(news)
-            }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,11 +59,14 @@ extension NewsListViewController: NewsListProtocol {
     func setupNavigationBar() {
         navigationItem.title = "뉴스"
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.largeTitleDisplayMode = .always
     }
     
     func setupLayout() {
         view.addSubview(tableView)
+        
+        if #available(iOS 15.0, *) {
+            tableView.sectionHeaderTopPadding = 0.0
+        }
         
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()

@@ -106,8 +106,8 @@ private extension NewsListPresenter {
         
         newsSearchManager.request(
             from: currentKeyword,
-            start: (currentPage * display) + 2,
-            display: display
+            display: display,
+            start: (currentPage * display) + 2
         ) { [weak self] newValue in
             self?.newsList += newValue
             self?.currentPage += 1

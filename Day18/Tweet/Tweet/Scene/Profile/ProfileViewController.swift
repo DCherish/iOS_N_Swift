@@ -31,36 +31,40 @@ final class ProfileViewController: UIViewController {
     }()
     
     private lazy var saveButton: UIButton = {
-//        // MARK: Target for iOS 14.x-
-//        let button = UIButton()
-//
-//        button.setTitle("저장하기", for: .normal)
-//        button.titleLabel?.font = .systemFont(ofSize: 15.0, weight: .bold)
-//        button.contentEdgeInsets = UIEdgeInsets(~) // Deprecated
-//        button.layer.cornerRadius = 15.0
-//        button.backgroundColor = .systemBlue
-//        button.setTitleColor(.white, for: .normal)
-        
-        // MARK: Target for iOS 15.0+
-        var config = UIButton.Configuration.filled()
-        
-        var title = AttributedString.init("저장하기")
-        title.font = .systemFont(ofSize: 15.0, weight: .bold)
-        
-        config.attributedTitle = title
-        config.baseBackgroundColor = .systemBlue
-        config.baseForegroundColor = .white
-        config.cornerStyle = .capsule
-        config.contentInsets = NSDirectionalEdgeInsets(top: 8.0, leading: 8.0, bottom: 8.0, trailing: 8.0)
-        
-        let button = UIButton(configuration: config)
-        button.addTarget(
-            self,
-            action: #selector(didTapSaveButton),
-            for: .touchUpInside
-        )
-        
-        return button
+        if #available(iOS 15.0, *) {
+            // MARK: Target for iOS 15.0+
+            var config = UIButton.Configuration.filled()
+            
+            var title = AttributedString.init("저장하기")
+            title.font = .systemFont(ofSize: 15.0, weight: .bold)
+            
+            config.attributedTitle = title
+            config.baseBackgroundColor = .systemBlue
+            config.baseForegroundColor = .white
+            config.cornerStyle = .capsule
+            config.contentInsets = NSDirectionalEdgeInsets(top: 8.0, leading: 8.0, bottom: 8.0, trailing: 8.0)
+            
+            let button = UIButton(configuration: config)
+            button.addTarget(
+                self,
+                action: #selector(didTapSaveButton),
+                for: .touchUpInside
+            )
+            
+            return button
+        } else {
+            // MARK: Target for iOS 14.x-
+            let button = UIButton()
+            
+            button.setTitle("저장하기", for: .normal)
+            button.titleLabel?.font = .systemFont(ofSize: 15.0, weight: .bold)
+            button.contentEdgeInsets = UIEdgeInsets(top: 8.0, left: 8.0, bottom: 8.0, right: 8.0) // Deprecated
+            button.layer.cornerRadius = 15.0
+            button.backgroundColor = .systemBlue
+            button.setTitleColor(.white, for: .normal)
+            
+            return button
+        }
     }()
     
     override func viewDidLoad() {
@@ -120,8 +124,23 @@ extension ProfileViewController: ProfileProtocol {
         view.endEditing(true)
     }
     
-    func showToast() {
-        view.makeToast("변경하고자 하는 내용을 입력해주세요.")
+    func showToast(_ type: String) {
+        var style = ToastStyle()
+        style.backgroundColor = .tintColor
+        
+        switch type {
+        case "name":
+            view.makeToast("이름 정보가 입력되지 않았습니다 🥺", duration: 1.0, style: style)
+            
+        case "account":
+            view.makeToast("계정 정보가 입력되지 않았습니다 🥺", duration: 1.0, style: style)
+            
+        case "success":
+            view.makeToast("저장 성공 😎", duration: 1.0, style: style)
+            
+        default:
+            fatalError()
+        }
     }
 }
 

@@ -43,7 +43,7 @@ final class NewsWebViewController: UIViewController {
 
 private extension NewsWebViewController {
     func setupNavigationBar() {
-        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationItem.largeTitleDisplayMode = .never
         
         navigationItem.title = news.title.htmlToString
         
