@@ -11,33 +11,35 @@ class SeguePresentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("SeguePresentViewController 뷰가 로드 되었다.")
+        print("SeguePresentViewController viewDidLoad")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("SeguePresentViewController 뷰가 나타날 것이다.")
+        print("SeguePresentViewController viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("SeguePresentViewController 뷰가 나타났다.")
+        print("SeguePresentViewController viewDidAppear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("SeguePresentViewController 뷰가 사라질 것이다.")
+        print("SeguePresentViewController viewWillDisappear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("SeguePresentViewController 뷰가 사라졌다.")
+        print("SeguePresentViewController viewDidDisappear")
     }
     
     @IBAction func tapBackButton(_ sender: UIButton) {
+        // 두 개의 동작은 사용자의 관점에서 전혀 차이를 느낄 수 없음
+        // 다만 completion 함수 구현에 있어 dismiss를 한 이후에 결과를 어디에게 알려주느냐에 차이가 있음
         self.presentingViewController?.dismiss(animated: true, completion: nil)
-        self.dismiss(animated: true) {
-            print("presentViewController completion execute")
-        }
+//        self.dismiss(animated: true) {
+//            print("presentViewController completion execute")
+//        }
     }
 }

@@ -13,27 +13,27 @@ class ViewController: UIViewController, SendDataDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("ViewController 뷰가 로드 되었다.")
+        print("ViewController viewDidLoad")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("ViewController 뷰가 나타날 것이다.")
+        print("ViewController viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("ViewController 뷰가 나타났다.")
+        print("ViewController viewDidAppear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("ViewController 뷰가 사라질 것이다.")
+        print("ViewController viewWillDisappear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("ViewController 뷰가 사라졌다.")
+        print("ViewController viewDidDisappear")
     }
 
     @IBAction func tapCodePushButton(_ sender: UIButton) {

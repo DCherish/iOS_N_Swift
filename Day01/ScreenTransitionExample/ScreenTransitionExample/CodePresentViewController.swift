@@ -19,11 +19,32 @@ class CodePresentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("CodePresentViewController viewDidLoad")
         
         if let name = name {
             self.nameLabel.text = name
             self.nameLabel.sizeToFit()
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("CodePresentViewController viewWillAppear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("CodePresentViewController viewDidAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("CodePresentViewController viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("CodePresentViewController viewDidDisappear")
     }
     
     @IBAction func tapBackButton(_ sender: UIButton) {
