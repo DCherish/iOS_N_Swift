@@ -14,9 +14,10 @@
 - **Swift**을 이용한 **iOS** 개발 실력 향상  
 
 # 👨‍💻 기술 Stack
-| ![xc] | ![sw] | ![rxsw] | ![swui] |
-| :---: | :---: | :-----: | :-----: |
-| Xcode | Swift | RxSwift | SwiftUI |
+- Xcode ![xcode]  
+- Swift ![swift]  
+- RxSwift ![rxswift]  
+- SwiftUI ![swiftui]  
 
 # ✍️ 실습 자료
 - [Day01](https://github.com/DCherish/iOS_N_Swift/tree/main/Day01) `README` `Preview` `File`  
@@ -48,7 +49,7 @@ The theme is available as open source under the terms of the [MIT License](https
 
 <!-- Stack Icon Refernces -->
 
-[xc]: /image/xcode.png
-[sw]: /image/swift.png
-[rxsw]: /image/rxswift.png
-[swui]: /image/swiftui.png
+[xcode]: /image/xcode.png
+[swift]: /image/swift.png
+[rxswift]: /image/rxswift.png
+[swiftui]: /image/swiftui.png
