@@ -36,3 +36,11 @@
 - [Day16](https://github.com/DCherish/iOS_N_Swift/tree/main/Day16)  `README` `File` `Preview`  
 - [Day17](https://github.com/DCherish/iOS_N_Swift/tree/main/Day17)  `README` `File` `Preview`  
 - [Day18](https://github.com/DCherish/iOS_N_Swift/tree/main/Day18)  `README` `File` `Preview`  
+
+---
+
+# ⚠️ License
+The theme is available as open source under the terms of the [MIT License](https://github.com/DCherish/Proj_Algorithm/blob/master/LICENSE).  
+###### *When you use this project, It would appreciate it if you could press the Star button*(⭐).
+
+---
