@@ -1,6 +1,4 @@
 .DS_Store
-Day01/AutoLayoutExample/AutoLayoutExample.xcodeproj/project.xcworkspace/xcuserdata/kidcherish.xcuserdatad/UserInterfaceState.xcuserstate
-UserInterfaceState.xcuserstate
-note.md
+*.xcuserdata
 Day03/Weather/Weather/Token.txt
 Day03/COVID19/COVID19/Token.txt
