@@ -18,8 +18,8 @@
 🍎 -  
 
 # ✍️ Project
-- [AutoLayoutExample](https://github.com/DCherish/iOS_N_Swift/tree/main/Day01/AutoLayoutExample) `File` `Preview`  
-- [QuotesGenerator](https://github.com/DCherish/iOS_N_Swift/tree/main/Day01/QuotesGenerator) `File` `Preview`  
-- [ScreenTransitionExample](https://github.com/DCherish/iOS_N_Swift/tree/main/Day01/ScreenTransitionExample) `File` `Preview`  
-- [LEDBoard](https://github.com/DCherish/iOS_N_Swift/tree/main/Day01/LEDBoard) `File` `Preview`  
-- [Calculator](https://github.com/DCherish/iOS_N_Swift/tree/main/Day01/Calculator) `File` `Preview`  
+⭐️ [AutoLayoutExample](https://github.com/DCherish/iOS_N_Swift/tree/main/Day01/AutoLayoutExample) `File` `Preview`  
+⭐️ [QuotesGenerator](https://github.com/DCherish/iOS_N_Swift/tree/main/Day01/QuotesGenerator) `File` `Preview`  
+⭐️ [ScreenTransitionExample](https://github.com/DCherish/iOS_N_Swift/tree/main/Day01/ScreenTransitionExample) `File` `Preview`  
+⭐️ [LEDBoard](https://github.com/DCherish/iOS_N_Swift/tree/main/Day01/LEDBoard) `File` `Preview`  
+⭐️ [Calculator](https://github.com/DCherish/iOS_N_Swift/tree/main/Day01/Calculator) `File` `Preview`  
