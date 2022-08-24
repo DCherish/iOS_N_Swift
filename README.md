@@ -40,7 +40,7 @@
 ---
 
 # ⚠️ License
-The theme is available as open source under the terms of the [MIT License](https://github.com/DCherish/Proj_Algorithm/blob/master/LICENSE).  
+The theme is available as open source under the terms of the [MIT License](https://github.com/DCherish/iOS_N_Swift/blob/main/LICENSE).  
 ###### *When you use this project, It would appreciate it if you could press the Star button*(⭐).
 
 ---
