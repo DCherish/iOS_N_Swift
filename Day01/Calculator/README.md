@@ -9,5 +9,5 @@
 ---
 
 # 📱 Preview
-![5](https://user-images.githubusercontent.com/68846212/186474891-69bc69e9-3cad-4c3e-b995-694733e2f448.gif)
+![5](https://user-images.githubusercontent.com/68846212/186479758-c0772a6e-a9ee-4adc-ba78-ef4c8d8964eb.gif)
 > 계산기 앱을 구현하였습니다.  
