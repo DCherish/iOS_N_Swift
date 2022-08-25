@@ -10,7 +10,7 @@
 
 # 🤖 Tech Stack
 🍏 SceneDelegate Setting, PreviewProvider(SwiftUI)  
-🍏 UICollectionViewController(CollectionView ⭐️), UINavigationController  
+🍏 UICollectionViewController(CollectionView ⭐️), UINavigationController, UICollectionReusableView  
 🍏 Decodable, #imageLiteral, GCD, typealias  
 🍏 OpenAPI(PunkAPI), SnapKit(lib)  
 🍎 UILabel, UIButton, UIImageView, UIStackView  
