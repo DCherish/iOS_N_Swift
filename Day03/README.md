@@ -9,7 +9,7 @@
 ---
 
 # 🤖 Tech Stack
-🍏 UIActivityIndicatorView  
+🍏 UIActivityIndicatorView, UITableViewController  
 🍏 HTTP, URLSession, Codable, CodingKey  
 🍏 OpenAPI(OpenWeatherAPI, Corona19API)  
 🍏 Alamofire(lib), Charts(lib), CocoaPods, DispatchQueue.main.async  
