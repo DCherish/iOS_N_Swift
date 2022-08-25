@@ -13,7 +13,7 @@
 🍏 @IBOutlet, @IBAction, @IBInspectable, @IBDesignable  
 🍏 UIKit, UIView, UIViewController, UIStackView  
 🍏 UILabel, UIButton(.Configuration(iOS 15.0+)), UINavigationViewController  
-🍏 Content Hugging, Compression Resistance, Segueway  
+🍏 Content Hugging, Compression Resistance, Segueway, Property Observer(didSet)  
 🍏 화면 전환, View Lifecycle, 화면 간 데이터 전달(delegate), 에셋 카탈로그(image 1x 2x 3x)  
 🍎 -  
 
