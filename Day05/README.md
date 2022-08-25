@@ -10,10 +10,11 @@
 
 # 🤖 Tech Stack
 🍏 UINib, UIStoryboard, UITable, UITableViewCell(awakeFromNib, setSelected)  
-🍏 Xib File  
+🍏 extension, Xib File, plist File  
 🍏 FirebaseDatabase(Realtime, Firestore), FirebaseRemoteConfig, Firebase A/B Testing  
 🍏 Kingfisher(lib), lottie-ios(lib)  
-🍎 UILabel, UIImageView, UITableViewController  
+🍎 UIView, UILabel, UIImageView  
+🍎 UIViewController, UITableViewController, UIAlertController  
 🍎 Codable, CocoaPods, DispatchQueue.main.async  
 
 # ❤️‍🔥 Project
