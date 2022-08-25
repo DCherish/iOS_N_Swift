@@ -15,7 +15,7 @@
 🍏 OpenAPI(PunkAPI), SnapKit(lib)  
 🍎 UILabel, UIButton, UIImageView, UIStackView  
 🍎 UIImage, UIBarButtonItem, UICollectionView, UITableViewController  
-🍎 UI~DataSource, UI~Delegate, extension  
+🍎 UI-DataSource, UI-Delegate, extension  
 🍎 URLSession, DispatchQueue.main.async, plist File, Kingfisher(lib)  
 
 # ❤️‍🔥 Project

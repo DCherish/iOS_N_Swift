@@ -12,7 +12,7 @@
 🍏 UIActivityIndicatorView, UIStoryboard  
 🍏 FirebaseAuth(email/password, OAuth(google, Apple(not yet)))  
 🍏 becomeFirstResponder  
-🍎 UILabel, UIButton, UIStackView, UI~Delegate  
+🍎 UILabel, UIButton, UIStackView, UI-Delegate  
 🍎 delegate, CocoaPods, endEditing  
 
 # ❤️‍🔥 Project
