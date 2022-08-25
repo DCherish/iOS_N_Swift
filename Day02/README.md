@@ -10,9 +10,9 @@
 
 # 🤖 Tech Stack
 🍏 UITextField, UITextView, UITableView, UICollectionView  
-🍏 UIImage, UIProgressView, UIAlertController, UITabBarController  
+🍏 UIImageView, UIProgressView, UIAlertController, UITabBarController  
 🍏 UIBarButtonItem, UIDatePicker, UI~Datasource, UI~Delegate  
-🍏 UIViewAnimation, UIEdgeInsets, UIScreen.main.bounds.width  
+🍏 UIImage, UIViewAnimation, UIEdgeInsets, UIScreen.main.bounds.width  
 🍏 UserDefaults, NotificationCenter, DispatchSourceTimer, AudioToolbox  
 🍏 DateFormatter(), Locale(), touchesBegan & endEditing, required init?  
 🍎 UILabel  
