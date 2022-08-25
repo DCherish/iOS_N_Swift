@@ -17,7 +17,7 @@
 
 <div align="center">
 
-💗 *Preview Video is now Loading... It will be played soon! Plz Wait* 🙃
+💗 *Preview Video is now Loading... It will be played soon! Plz Wait* 🙃  
 💔 *If Preview Video is not shown or not played, Press refresh button* 🫥
 
 </div>
