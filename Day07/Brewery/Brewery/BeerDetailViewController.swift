@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BeerDetailViewController: UITableViewController {
     var beer: Beer?
