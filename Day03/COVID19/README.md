@@ -2,7 +2,7 @@
 
 <div align="center">
 
- 💛 *TodoList Preview*
+ 💛 *COVID19 Preview*
 
 </div>
 

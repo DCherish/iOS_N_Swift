@@ -2,7 +2,7 @@
 
 <div align="center">
 
- 💚 *Day02*
+ 💚 *Day03*
 
 </div>
 
