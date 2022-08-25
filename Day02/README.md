@@ -19,6 +19,6 @@
 🍎 Property Observer(didSet)  
 
 # ❤️‍🔥 Project
-📂 [TodoList](https://github.com/DCherish/iOS_N_Swift/tree/main/Day02/TodoList) `File` `Preview`  `Preview`  
+📂 [TodoList](https://github.com/DCherish/iOS_N_Swift/tree/main/Day02/TodoList) `File` `Preview`  
 📁 [Diary](https://github.com/DCherish/iOS_N_Swift/tree/main/Day02/Diary) `File` `Preview`  
 📁 [Pomodoro](https://github.com/DCherish/iOS_N_Swift/tree/main/Day02/Pomodoro) `File` `Preview`  
