@@ -10,7 +10,7 @@
 
 # 📱 Preview
 ![17](https://user-images.githubusercontent.com/68846212/186674349-80d52e9a-10ab-4850-b6a4-16379199d019.gif)
-> 이전에 구현했던 [프로젝트][https://github.com/DCherish/iOS_N_Swift/tree/main/Day07/NetflixStyleSample]를 SwiftUI를 이용하여 앱을 구현하였습니다.  
+> 이전에 구현했던 [프로젝트][proj]를 SwiftUI를 이용하여 앱을 구현하였습니다.  
 
 ---
 
@@ -22,3 +22,7 @@
 </div>
 
 ---
+
+<!-- Stack Icon Refernces -->
+
+[proj]: https://github.com/DCherish/iOS_N_Swift/tree/main/Day07/NetflixStyleSample
