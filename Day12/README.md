@@ -16,7 +16,7 @@
 🍎 UIViewController, UITableViewController, UINavigationController, UIAlertController  
 🍎 RxCocoa, RxExtension, UISearchBar, UITableViewHeaderFooterView, URLSession with Rx  
 🍎 Decodable, CodingKey, required init?, typealias, extension  
-🍎 CocoaPods, OpenAPI(KakaoBlogSearch) Kingfisher(lib), SnapKit(lib)  
+🍎 OpenAPI(KakaoBlogSearch), Package Dependencies, Kingfisher(lib), SnapKit(lib)  
 
 # ❤️‍🔥 Project
 📂 [SearchDaumBlogMVVM](https://github.com/DCherish/iOS_N_Swift/tree/main/Day12/SearchDaumBlogMVVM) `File` `Preview`  

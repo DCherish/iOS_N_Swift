@@ -18,7 +18,7 @@
 🍎 UINavigationController, UIViewController, UIAlertController    
 🍎 UI-DataSource, UI-DelegateFlowLayout, UI-Delegate, UI-FlowLayout  
 🍎 Decodable, extension, required init?, touchesBegan & endEditing  
-🍎 CocoaPods, SnapKit(lib), Alamofire(lib)    
+🍎 Package Dependencies, SnapKit(lib), Alamofire(lib)    
 
 # ❤️‍🔥 Project
 📂 [SubwayStation](https://github.com/DCherish/iOS_N_Swift/tree/main/Day10/SubwayStation) `File` `Preview`  

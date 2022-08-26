@@ -18,7 +18,8 @@
 🍎 UICollectionViewController, UICollectionReusableView, UIButton(.Configuration(iOS 15.0+))  
 🍎 UI-DataSource, UI-Delegate, extension, UserDefaults  
 🍎 Decodable, CodingKey, #imageLiteral, GCD, typealias  
-🍎 URLSession, DispatchQueue.main.async, plist File, CocoaPods, Kingfisher(lib), SnapKit(lib)  
+🍎 URLSession, DispatchQueue.main.async, plist File  
+🍎 Package Dependencies, Kingfisher(lib), SnapKit(lib)  
 
 # ❤️‍🔥 Project
 📂 [NetflixStyleSwiftUISample](https://github.com/DCherish/iOS_N_Swift/tree/main/Day08/NetflixStyleSwiftUISample) `File` `Preview`  

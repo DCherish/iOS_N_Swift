@@ -13,9 +13,7 @@
 🍏 CaseIterable, Hashable, OpenAPI(CoronaAPI)  
 🍎 SwiftUI, CLLocation, Identifiable, URLSession  
 🍎 Decodable, PreviewProvider, UUID  
-🍎 UnitTest, XCTest, UITest  
-
-
+🍎 Design Pattern(MVVM), UnitTest, XCTest, UITest, Package Dependencies  
 
 # ❤️‍🔥 Project
 📂 [FindCoronaCenter](https://github.com/DCherish/iOS_N_Swift/tree/main/Day14/FindCoronaCenter) `File` `Preview`  
