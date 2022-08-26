@@ -2,7 +2,7 @@
 
 <div align="center">
 
- 💛 *Starbucks Preview*
+ 💛 *MovieReview Preview*
 
 </div>
 
