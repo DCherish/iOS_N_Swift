@@ -23,6 +23,6 @@
 
 ---
 
-<!-- Stack Icon Refernces -->
+<!-- Project Link -->
 
 [proj]: https://github.com/DCherish/iOS_N_Swift/tree/main/Day07/NetflixStyleSample

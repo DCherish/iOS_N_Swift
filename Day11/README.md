@@ -11,13 +11,13 @@
 # 🤖 Tech Stack
 🍏 RxSwift(Observable, Trait, Subject)  
 🍏 RxSwift(Filtering/Transforming Operators, Combining/Time-Based Operators)  
-🍏 RxCocoa, RxExtension, UITableViewHeaderFooterView, URLSession with Rx  
+🍏 RxCocoa, RxExtension, UISearchBar, UITableViewHeaderFooterView, URLSession with Rx  
 🍏 OpenAPI(GitHubRestAPI, KakaoBlogSearch), extension+(Date), DispatchQueue.global  
 🍎 UILabel, UIButton, UIImage, UIView  
-🍎 UIImageView, UITableView, UITableViewCell  
+🍎 UIImageView, UITableView, UITableViewCell, UIScreen.main.bounds.width  
 🍎 UIViewController, UITableViewController, UINavigationController, UIAlertController  
 🍎 UIRefreshControl, UI-DataSource, UI-Delegate  
-🍎 Decodable, CodingKey, required init?, typealias  
+🍎 Decodable, CodingKey, required init?, typealias, extension  
 🍎 CocoaPods, Kingfisher(lib), SnapKit(lib)  
 
 # ❤️‍🔥 Project
