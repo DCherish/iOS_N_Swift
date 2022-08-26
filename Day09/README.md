@@ -17,7 +17,7 @@
 🍎 UIStackView, UICollectionView, UICollectionViewCell, UICollectionReusableView  
 🍎 UI-DataSource, UI-DelegateFlowLayout, UI-FlowLayout  
 🍎 UIEdgeInsets, required init?, extension  
-🍎 Decodable, plist File, SnapKit(lib), Kingfisher(lib)  
+🍎 Decodable, plist File, CocoaPods, SnapKit(lib), Kingfisher(lib)  
 
 # ❤️‍🔥 Project
 📂 [AppStore](https://github.com/DCherish/iOS_N_Swift/tree/main/Day09/AppStore) `File` `Preview`  

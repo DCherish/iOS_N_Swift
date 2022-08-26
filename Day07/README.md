@@ -16,7 +16,7 @@
 🍎 UILabel, UIButton, UIImageView, UIStackView  
 🍎 UIImage, UIBarButtonItem, UICollectionView, UITableViewController  
 🍎 UI-DataSource, UI-Delegate, UIEdgeInsets, extension, CodingKey  
-🍎 URLSession, DispatchQueue.main.async, plist File, Kingfisher(lib)  
+🍎 URLSession, DispatchQueue.main.async, plist File, CocoaPods, Kingfisher(lib)  
 
 # ❤️‍🔥 Project
 📂 [NetflixStyleSample](https://github.com/DCherish/iOS_N_Swift/tree/main/Day07/NetflixStyleSample) `File` `Preview`  
