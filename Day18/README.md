@@ -2,7 +2,7 @@
 
 <div align="center">
 
- 💚 *Day12*
+ 💚 *Day18*
 
 </div>
 
@@ -18,6 +18,8 @@
 🍎 Decodable, CodingKey, required init?, typealias, extension  
 🍎 OpenAPI(KakaoBlogSearch), Package Dependencies, Kingfisher(lib), SnapKit(lib)  
 
+  - Design Pattern(MVP), UITableView
+  - UIStackView, UserDefaults, UnitTest(XCTest), SnapKit(lib), Floaty(lib)  
+
 # ❤️‍🔥 Project
-📂 [SearchDaumBlogMVVM](https://github.com/DCherish/iOS_N_Swift/tree/main/Day12/SearchDaumBlogMVVM) `File` `Preview`  
-📁 [Daangn](https://github.com/DCherish/iOS_N_Swift/tree/main/Day12/Daangn) `File` `Preview`  
+📂 [Tweet](https://github.com/DCherish/iOS_N_Swift/tree/main/Day18/Tweet) `File` `Preview`  
