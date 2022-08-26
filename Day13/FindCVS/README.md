@@ -9,7 +9,7 @@
 ---
 
 # 📱 Preview
-![26](https://user-images.githubusercontent.com/68846212/186834200-357c8a9f-bd29-4871-90a9-6c69957c9600.gif)
+![25](https://user-images.githubusercontent.com/68846212/186834196-e7f90bd2-a102-4b04-91e7-6eaddc7db7f0.gif)
 > 현재 위치를 기준으로 주변 편의점을 검색합니다.  
 > 마커를 누른다면, 해당 마커에 해당하는 항목을 리스트에 표시합니다.  
 > 리스트의 항목을 누른다면, 해당 항목을 중심으로 위치시키고 다시 주변 편의점을 검색합니다.  
