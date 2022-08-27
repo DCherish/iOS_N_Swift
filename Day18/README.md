@@ -9,8 +9,7 @@
 ---
 
 # 🤖 Tech Stack
-🍏 WKWebView, extension+(String), CI/CD(Bitrise)  
-🍏 OpenAPI(NaverAPI(News)), TTGTextTagCollectionView(lib), Floaty(lib)  
+🍏 Floaty(lib)  
 🍎 UILabel, UIButton, UIImage, UIBarButtonItem  
 🍎 UITableView, UITableViewCell, UITextView, UITextField  
 🍎 UIImageView, UIStackView, UIViewController, UINavigationController  
