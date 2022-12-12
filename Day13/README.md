@@ -9,7 +9,7 @@
 ---
 
 # 🤖 Tech Stack
-🍏 LocationInformationViewController, CoreLocation, CLLocationManager  
+🍏 CoreLocation, CLLocationManager  
 🍏 UnitTest, XCTest, RxTest, RxBlocking  
 🍏 @testable, Nimble(lib), Stubber(lib)  
 🍏 enum Error, OpenAPI(KakaoMapAPI)    
