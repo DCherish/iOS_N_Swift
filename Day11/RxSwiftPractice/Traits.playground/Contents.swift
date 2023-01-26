@@ -147,6 +147,7 @@ Maybe<String>.just("✅")
             print("disposed")
         }
     )
+    .disposed(by: disposeBag)
 
 //Observable<String>.just("✅")
 //    .subscribe(
@@ -166,7 +167,7 @@ Maybe<String>.just("✅")
 
 print("-----Maybe2-----")
 Observable<String>.create { observer -> Disposable in
-    observer.onError(TraitsError.single)
+    observer.onError(TraitsError.maybe)
     return Disposables.create()
 }
 .asMaybe()
@@ -175,7 +176,7 @@ Observable<String>.create { observer -> Disposable in
         print($0)
     },
     onError: {
-        print("error: \($0.localizedDescription)")
+        print("error: \($0)")
     },
     onCompleted: {
         print("completed")

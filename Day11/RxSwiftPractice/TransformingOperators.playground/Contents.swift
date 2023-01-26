@@ -74,7 +74,7 @@ champs
     })
     .disposed(by: disposeBag)
 
-champs.onNext(seoulA)
+champs.onNext(seoulA) // 서울 점수 시퀀스 집중 (최신)
 seoulA.score.onNext(9)
 
 champs.onNext(jejuA) // 이제 제주 점수 시퀀스 변경 집중 (최신)

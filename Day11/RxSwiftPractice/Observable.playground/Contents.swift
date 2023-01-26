@@ -86,6 +86,8 @@ Observable.of(1, 2, 3)
 
 
 print("-----Create1-----")
+// 직접적인 코드 구현을 통해 observer 메서드를 호출하여 Observable 생성하는 방식
+// 파라미터는 AnyObserver를 가져와 Disposable을 반환하는 이스케이프 클로저
 Observable.create { observer -> Disposable in
     observer.onNext(1)
     observer.onCompleted()
@@ -124,6 +126,8 @@ Observable.create { observer -> Disposable in
 .disposed(by: disposeBag)
 
 print("-----Deferred1-----")
+// Observable Factory, 즉, 구독자마다 조건에 따라 새로운 Observable을 생성하는 방식
+// 조건에 따라 다른 이벤트를 방출하는 게 아니라 다른 Observable을 생성
 Observable.deferred {
     Observable.of(1, 2, 3)
 }

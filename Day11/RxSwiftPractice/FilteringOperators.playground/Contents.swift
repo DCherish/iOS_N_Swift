@@ -94,7 +94,7 @@ Observable.of("🥇", "🥈", "🥉", "🥴", "😯")
     })
     .disposed(by: disposeBag)
 
-print("-----enimerated-----")
+print("-----enumerated-----")
 Observable.of("🥇", "🥈", "🥉", "🥴", "😯")
     .enumerated()
     .take(while: {
