@@ -15,8 +15,8 @@ final class MockNewsSearchManager: NewsSearchManagerProtocol {
     
     func request(
         from keyword: String,
-        start: Int,
         display: Int,
+        start: Int,
         completionHandler: @escaping ([News]) -> Void
     ) {
         isCalledRequest = true
